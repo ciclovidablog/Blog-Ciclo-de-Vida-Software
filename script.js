@@ -1,9 +1,16 @@
-window.addEventListener('scroll', function() {
-    const elements = document.querySelectorAll('.container');
-    elements.forEach((element) => {
-        const position = element.getBoundingClientRect();
-        if (position.top < window.innerHeight && position.bottom >= 0) {
-            element.classList.add('appear');
-        }
+// Animación para mostrar secciones al hacer scroll
+document.addEventListener('DOMContentLoaded', function() {
+    const containers = document.querySelectorAll('.container');
+    
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('appear');
+            }
+        });
+    }, { threshold: 0.1 });
+    
+    containers.forEach(container => {
+        observer.observe(container);
     });
 });
