@@ -1,0 +1,100 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Colores de encabezado */
+  header {
+    background-color: #1a75ff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header img {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  /* Secciones */
+  section {
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Fases */
+  .fase {
+    margin-bottom: 20px;
+  }
+  
+  .fase img, video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+  /* Evaluación */
+  #evaluacion form {
+    margin-top: 20px;
+  }
+  
+  #evaluacion form label, select, textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  #evaluacion form button {
+    padding: 10px;
+    background-color: #1a75ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #resultado {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #1a75ff;
+  }
+  
+  /* Formulario de Contacto */
+  #contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #contact-form button {
+    padding: 10px;
+    background-color: #1a75ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Pie de página */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a75ff;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
