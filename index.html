@@ -3,97 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Blog didáctico sobre el ciclo de vida del software, explicando sus fases con ejemplos y evaluación interactiva.">
-    <meta name="author" content="Tu Nombre">
-    <title>Blog: Ciclo de Vida del Software</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Ciclo de Vida del Software</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <!-- Barra de progreso -->
-    <div id="progress-bar"></div>
-
-    <!-- Cabecera -->
     <header>
-        <div class="logo">
-            <img src="imagenes/logo.png" alt="Logo del Blog">
-            <h1>Blog: Ciclo de Vida del Software</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#introduccion">Introducción</a></li>
-                <li><a href="#fases">Fases</a></li>
-                <li><a href="#evaluacion">Evaluación</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+        <h1>Ciclo de Vida del Software</h1>
+        <p>Un recorrido instructivo para aprender el proceso completo.</p>
     </header>
 
-    <!-- Sección Introducción -->
     <section id="introduccion">
         <h2>Introducción</h2>
-        <p>Bienvenido a este blog didáctico sobre el Ciclo de Vida del Software. Aquí aprenderás sobre las fases esenciales del desarrollo de software y cómo se aplican en proyectos reales.</p>
+        <p>El ciclo de vida del software describe todas las etapas por las que pasa un software, desde su concepción hasta su mantenimiento. 
+        Es esencial para el éxito de cualquier proyecto de desarrollo, garantizando que los requisitos se cumplan a lo largo del tiempo.
+        Las metodologías más comunes incluyen el modelo en cascada y las metodologías ágiles.</p>
     </section>
 
-    <!-- Sección Fases del Ciclo de Vida -->
     <section id="fases">
         <h2>Fases del Ciclo de Vida del Software</h2>
         <div class="accordion">
-            <button class="accordion-btn">Recolección de Requisitos</button>
-            <div class="accordion-content">
-                <p>La recolección de requisitos es el primer paso del ciclo de vida del software...</p>
+            <h3>Fase 1: Recolección de Requisitos</h3>
+            <div class="content">
+                <p>En esta fase se identifican y documentan las necesidades y expectativas del cliente. Es crucial para evitar errores a futuro.</p>
+                <img src="imagenes/recoleccion.png" alt="Recolección de requisitos">
             </div>
-            <button class="accordion-btn">Diseño del Sistema</button>
-            <div class="accordion-content">
-                <p>En esta fase se realiza el diseño del software...</p>
+
+            <h3>Fase 2: Diseño</h3>
+            <div class="content">
+                <p>Se define la arquitectura del sistema y el diseño de los componentes. Aquí se visualizan los diagramas y se toman decisiones clave de tecnología.</p>
+                <img src="imagenes/diseno.png" alt="Diseño del sistema">
             </div>
-            <button class="accordion-btn">Implementación</button>
-            <div class="accordion-content">
-                <p>Es la fase donde se codifica el software...</p>
+
+            <h3>Fase 3: Implementación</h3>
+            <div class="content">
+                <p>Es la fase donde se comienza a escribir código y a implementar la solución. Los programadores trabajan con base en los requerimientos y el diseño previo.</p>
+                <img src="imagenes/implementacion.png" alt="Implementación del software">
             </div>
-            <button class="accordion-btn">Pruebas</button>
-            <div class="accordion-content">
-                <p>La fase de pruebas garantiza que el software funcione correctamente...</p>
+
+            <h3>Fase 4: Pruebas</h3>
+            <div class="content">
+                <p>En esta fase, el software es probado para identificar y corregir errores. Se realizan pruebas unitarias, de integración y de usuario.</p>
+                <img src="imagenes/pruebas.png" alt="Pruebas del software">
             </div>
-            <button class="accordion-btn">Mantenimiento</button>
-            <div class="accordion-content">
-                <p>Esta fase cubre las mejoras y correcciones que se aplican al software tras su liberación...</p>
+
+            <h3>Fase 5: Mantenimiento</h3>
+            <div class="content">
+                <p>Después de la entrega, el software entra en fase de mantenimiento, donde se realizan mejoras o se solucionan problemas detectados por los usuarios.</p>
+                <img src="imagenes/mantenimiento.png" alt="Mantenimiento del software">
             </div>
         </div>
     </section>
 
-    <!-- Sección Video -->
-    <section>
-        <h2>Video Explicativo</h2>
-        <video controls poster="imagenes/video-thumbnail.png">
-            <source src="videos/ciclo_vida.mp4" type="video/mp4">
-            Tu navegador no soporta la reproducción de video.
+    <section id="caso-estudio">
+        <h2>Caso de Estudio</h2>
+        <p>Un ejemplo práctico del ciclo de vida del software aplicado en un proyecto de desarrollo para una empresa de e-commerce. 
+        Desde la fase de recolección de requisitos, hasta la fase de mantenimiento del software entregado.</p>
+        <video controls>
+            <source src="videos/caso_estudio.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de este video.
         </video>
     </section>
 
-    <!-- Sección Evaluación -->
     <section id="evaluacion">
-        <h2>Evaluación</h2>
+        <h2>Evalúa tu conocimiento</h2>
+        <p>Responde las siguientes preguntas para evaluar lo aprendido:</p>
         <form id="evaluacion-form">
             <label for="respuesta1">¿Cuál es la primera fase del ciclo de vida del software?</label>
-            <input type="text" id="respuesta1" placeholder="Escribe tu respuesta aquí...">
+            <input type="text" id="respuesta1" name="respuesta1"><br>
 
-            <label for="respuesta2">¿Qué fases incluye el ciclo de vida del software?</label>
-            <input type="text" id="respuesta2" placeholder="Escribe tu respuesta aquí...">
+            <label for="respuesta2">¿Cómo se llaman las distintas etapas del ciclo?</label>
+            <input type="text" id="respuesta2" name="respuesta2"><br>
 
-            <button type="submit">Enviar</button>
+            <input type="submit" value="Enviar respuestas">
         </form>
     </section>
 
-    <!-- Sección Contacto -->
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Si tienes alguna duda o comentario, no dudes en contactarnos a través del correo: <a href="mailto:contacto@blogsoftware.com">contacto@blogsoftware.com</a>.</p>
+    <section id="faq">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="faq-item">
+            <h3>¿Qué es el ciclo de vida del software?</h3>
+            <p>Es el conjunto de fases que atraviesa un software desde su creación hasta su mantenimiento.</p>
+        </div>
+        <div class="faq-item">
+            <h3>¿Qué diferencia hay entre las metodologías en cascada y ágiles?</h3>
+            <p>El modelo en cascada sigue un enfoque secuencial, mientras que las metodologías ágiles permiten flexibilidad y adaptación a lo largo del proyecto.</p>
+        </div>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Blog: Ciclo de Vida del Software. Todos los derechos reservados.</p>
+        <p>Blog creado para enseñar el ciclo de vida del software. Contáctanos para más información.</p>
     </footer>
 
     <script src="script.js"></script>

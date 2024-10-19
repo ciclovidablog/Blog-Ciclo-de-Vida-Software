@@ -1,45 +1,36 @@
-// Manejo de barra de progreso
-window.onscroll = function() {updateProgressBar()};
+document.addEventListener("DOMContentLoaded", function() {
+  const accHeaders = document.querySelectorAll(".accordion h3");
+  accHeaders.forEach(header => {
+      header.addEventListener("click", function() {
+          const content = this.nextElementSibling;
+          content.style.display = content.style.display === "block" ? "none" : "block";
+      });
+  });
 
-function updateProgressBar() {
-    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    var scrolled = (winScroll / height) * 100;
-    document.getElementById("progress-bar").style.width = scrolled + "%";
-}
+  const faqHeaders = document.querySelectorAll("#faq h3");
+  faqHeaders.forEach(header => {
+      header.addEventListener("click", function() {
+          const content = this.nextElementSibling;
+          content.style.display = content.style.display === "block" ? "none" : "block";
+      });
+  });
 
-// Acordeones
-var acc = document.getElementsByClassName("accordion-btn");
-for (var i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-            content.style.display = "none";
-        } else {
-            content.style.display = "block";
-        }
-    });
-}
+  document.getElementById("evaluacion-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      let respuestasCorrectas = 0;
 
-// Evaluación
-document.getElementById("evaluacion-form").addEventListener("submit", function(event) {
-    event.preventDefault();
-    let respuestasCorrectas = 0;
-    
-    if (document.getElementById("respuesta1").value.toLowerCase() === "recolección de requisitos") {
-        respuestasCorrectas++;
-    }
-    
-    if (document.getElementById("respuesta2").value.toLowerCase().includes("fases")) {
-        respuestasCorrectas++;
-    }
+      if (document.getElementById("respuesta1").value.toLowerCase() === "recolección de requisitos") {
+          respuestasCorrectas++;
+      }
 
-    if (respuestasCorrectas === 2) {
-        alert("¡Excelente trabajo! Has respondido correctamente. Sigue adelante.");
-    } else {
-        alert("Has respondido correctamente a " + respuestasCorrectas + " preguntas. ¡Intenta mejorar!");
-    }
+      if (document.getElementById("respuesta2").value.toLowerCase().includes("fases")) {
+          respuestasCorrectas++;
+      }
+
+      if (respuestasCorrectas === 2) {
+          alert("¡Excelente trabajo! Has respondido correctamente. Sigue adelante.");
+      } else {
+          alert("Has respondido correctamente a " + respuestasCorrectas + " preguntas. ¡Intenta mejorar!");
+      }
+  });
 });
-
-  

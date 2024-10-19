@@ -1,130 +1,63 @@
-/* Estilos generales */
 body {
-  font-family: 'Roboto', Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f6;
   color: #333;
-}
-
-h1, h2 {
-  font-weight: 700;
-  color: #007BFF;
-}
-
-p {
-  font-size: 18px;
   line-height: 1.6;
 }
 
-/* Estilos de cabecera */
 header {
-  background-color: #007BFF;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  align-items: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.logo img {
-  width: 50px;
-  margin-right: 15px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-nav ul li {
-  display: inline;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Estilos de secciones */
-section {
-  margin: 20px;
-  padding: 20px;
-  background: #E9F5FF;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilo de los acordeones */
-.accordion-btn {
-  background-color: #007BFF;
-  color: white;
-  padding: 15px;
-  border: none;
-  font-size: 18px;
-  width: 100%;
-  text-align: left;
-  outline: none;
-  transition: background-color 0.4s ease, box-shadow 0.4s ease;
-  border-radius: 8px;
-}
-
-.accordion-btn:hover {
-  background-color: #0056b3;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.accordion-content {
-  padding: 20px;
-  background-color: white;
-  display: none;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-}
-
-.accordion.active .accordion-content {
-  display: block;
-  max-height: 1000px;
-  transition: max-height 0.5s ease-in;
-}
-
-/* Barra de progreso */
-#progress-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 5px;
-  background-color: #007BFF;
-  z-index: 100;
-}
-
-/* Estilos del botón */
-button {
-  background-color: #007BFF;
-  color: white;
-  padding: 12px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-/* Estilos del footer */
-footer {
-  background-color: #007BFF;
+  background-color: #003366;
   color: white;
   text-align: center;
-  padding: 20px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+h2 {
+  color: #0059b3;
+}
+
+.accordion h3 {
+  cursor: pointer;
+  background-color: #0059b3;
+  color: white;
+  padding: 10px;
+  margin: 0;
+  border-bottom: 1px solid #003366;
+}
+
+.accordion .content {
+  display: none;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  background-color: #e6f0ff;
+}
+
+.accordion .content img {
+  max-width: 100%;
+  height: auto;
+}
+
+#faq h3 {
+  cursor: pointer;
+  background-color: #003366;
+  color: white;
+  padding: 10px;
+}
+
+#faq .faq-item p {
+  display: none;
+  padding: 10px;
+  background-color: #e6f0ff;
+}
+
+footer {
+  text-align: center;
+  background-color: #003366;
+  color: white;
+  padding: 10px 0;
 }
