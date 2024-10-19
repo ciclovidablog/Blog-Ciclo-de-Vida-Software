@@ -1,24 +1,27 @@
-// Función para enviar la evaluación
-function enviarEvaluacion() {
-    const respuesta1 = document.getElementById('pregunta1').value;
-    const respuesta2 = document.getElementById('pregunta2').value;
-    const respuesta3 = document.getElementById('pregunta3').value;
-  
-    let resultado = "Gracias por responder. Aquí están tus respuestas: \n";
-    resultado += "1. " + respuesta1 + "\n";
-    resultado += "2. " + respuesta2 + "\n";
-    resultado += "3. " + respuesta3 + "\n";
-  
-    document.getElementById('resultado').textContent = resultado;
-  }
-  
-  // Función para manejar el envío del formulario de contacto
-  document.getElementById('contact-form').addEventListener('submit', function(event) {
+// Acordeón
+var acc = document.getElementsByClassName("accordion-btn");
+
+for (var i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}
+
+// Evaluación y Contacto - simulación de envío
+document.getElementById("evaluacion-form").addEventListener("submit", function(event) {
     event.preventDefault();
-    const nombre = document.getElementById('nombre').value;
-    const email = document.getElementById('email').value;
-    const mensaje = document.getElementById('mensaje').value;
-  
-    alert(`Gracias por contactarnos, ${nombre}. Te responderemos pronto al correo: ${email}`);
-  });
+    alert("Evaluación enviada. ¡Sigue aprendiendo!");
+});
+
+document.getElementById("contacto-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("Mensaje enviado. ¡Gracias por contactarnos!");
+});
+
   
