@@ -98,3 +98,35 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #0033bb;
 }
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  #sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+  }
+
+  #sidebar ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+
+  #content {
+      margin-left: 0;
+      padding: 10px;
+  }
+
+  iframe, img {
+      width: 100%;
+      height: auto;
+  }
+
+  input[type="text"], textarea {
+      width: 100%;
+  }
+
+  input[type="submit"] {
+      width: 100%;
+  }
+}
