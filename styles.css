@@ -1,100 +1,57 @@
-/* General */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
-  color: #333;
+  background-color: #f4f4f4;
 }
 
 header {
-  background-color: #005f99;
+  background: #007acc;
   color: white;
-  padding: 20px;
+  padding: 10px 0;
   text-align: center;
 }
 
-header .logo img {
-  max-width: 150px;
-  display: block;
-  margin: 0 auto 10px;
-}
-
-nav {
-  background-color: #0077cc;
-  padding: 10px;
-  text-align: center;
-}
-
-nav ul {
-  list-style-type: none;
+.logo h1 {
   margin: 0;
+}
+
+.navbar ul {
+  list-style: none;
   padding: 0;
 }
 
-nav ul li {
+.navbar li {
   display: inline;
-  margin-right: 15px;
+  margin: 0 15px;
 }
 
-nav ul li a {
+.navbar a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
+}
+
+main {
+  padding: 20px;
 }
 
 section {
+  margin-bottom: 20px;
   padding: 20px;
-  margin: 20px auto;
-  max-width: 1000px;
-  background-color: white;
+  background: white;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-h2 {
-  color: #005f99;
-}
-
-video {
-  display: block;
-  margin: 10px auto;
-  max-width: 100%;
-}
-
-form {
-  margin-top: 20px;
-}
-
-form label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-form input[type="text"],
-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-form input[type="submit"] {
-  background-color: #005f99;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 4px;
+.fase {
+  margin-bottom: 30px;
 }
 
 footer {
-  background-color: #005f99;
+  background: #007acc;
   color: white;
   text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  padding: 10px 0;
+  font-size: 0.8em;
 }
