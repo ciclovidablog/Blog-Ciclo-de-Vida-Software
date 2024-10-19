@@ -4,114 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ciclo de Vida del Software</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>Ciclo de Vida del Software</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#introduccion">Introducción</a></li>
-                <li><a href="#fases">Fases</a></li>
-                <li><a href="#caso-estudio">Caso de Estudio</a></li>
-                <li><a href="#evaluacion">Evaluación</a></li>
-                <li><a href="#faq">FAQ</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="introduccion" class="container">
-        <h2>Introducción</h2>
-        <p>El ciclo de vida del software describe todas las etapas por las que pasa un software, desde su concepción hasta su mantenimiento. 
-        Es esencial para el éxito de cualquier proyecto de desarrollo, garantizando que los requisitos se cumplan a lo largo del tiempo.
-        Las metodologías más comunes incluyen el modelo en cascada y las metodologías ágiles.</p>
-        <img src="imagenes/introduccion.jpg" alt="Introducción al ciclo de vida del software" class="img-responsive">
-    </section>
+    <aside id="sidebar">
+        <ul>
+            <li><a href="#introduccion">Introducción</a></li>
+            <li><a href="#recoleccion-requisitos">Recolección de Requisitos</a></li>
+            <li><a href="#diseno">Diseño</a></li>
+            <li><a href="#implementacion">Implementación</a></li>
+            <li><a href="#pruebas">Pruebas</a></li>
+            <li><a href="#mantenimiento">Mantenimiento</a></li>
+            <li><a href="#caso-estudio">Caso de Estudio</a></li>
+            <li><a href="#preguntas-frecuentes">Preguntas Frecuentes</a></li>
+        </ul>
+    </aside>
 
-    <section id="fases" class="container">
-        <h2>Fases del Ciclo de Vida del Software</h2>
-        <div class="grid">
-            <div class="fase">
-                <h3><i class="fas fa-pencil-alt"></i> Recolección de Requisitos</h3>
-                <p>Se identifican y documentan las necesidades del cliente.</p>
-                <img src="imagenes/recoleccion.png" alt="Recolección de requisitos" class="img-fase">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/qKqVvTox88U" title="Análisis y Recolección de Requisitos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <main id="content">
+        <section id="introduccion" class="container">
+            <h1>Introducción al Ciclo de Vida del Software</h1>
+            <p>El ciclo de vida del software describe las fases por las que pasa un proyecto de software desde su concepción hasta su mantenimiento.</p>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/HLZ5OfXPZrM" title="Ciclo de Vida del Desarrollo de Software" frameborder="0" allowfullscreen></iframe>
+        </section>
 
-            </div>
+        <section id="recoleccion-requisitos" class="container">
+            <h2>Recolección de Requisitos</h2>
+            <p>La recolección de requisitos es fundamental para entender qué necesita el cliente.</p>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/qKqVvTox88U" title="Análisis y Recolección de Requisitos" frameborder="0" allowfullscreen></iframe>
+        </section>
 
-            <div class="fase">
-                <h3><i class="fas fa-cogs"></i> Diseño</h3>
-                <p>Se define la arquitectura del sistema y el diseño de los componentes.</p>
-                <img src="imagenes/diseno.png" alt="Diseño del sistema" class="img-fase">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/aE9OYvOfJc4" title="Diseño de Software" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <section id="diseno" class="container">
+            <h2>Diseño del Software</h2>
+            <p>El diseño se refiere a la estructura general del software y cómo las partes encajan entre sí.</p>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/aE9OYvOfJc4" title="Diseño de Software" frameborder="0" allowfullscreen></iframe>
+        </section>
 
-            </div>
+        <section id="implementacion" class="container">
+            <h2>Implementación</h2>
+            <p>En esta fase se desarrolla el código según el diseño definido.</p>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/nFg9HHLn5wM" title="Implementación del Software" frameborder="0" allowfullscreen></iframe>
+        </section>
 
-            <div class="fase">
-                <h3><i class="fas fa-code"></i> Implementación</h3>
-                <p>Los programadores comienzan a escribir código basado en los requerimientos.</p>
-                <img src="imagenes/implementacion.png" alt="Implementación del software" class="img-fase">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/nFg9HHLn5wM" title="Implementación del Software" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <section id="pruebas" class="container">
+            <h2>Pruebas del Software</h2>
+            <p>Las pruebas son esenciales para asegurar la calidad del software.</p>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/0ImQ5yq1FZA" title="Pruebas de Software" frameborder="0" allowfullscreen></iframe>
+        </section>
 
-            </div>
+        <section id="mantenimiento" class="container">
+            <h2>Mantenimiento</h2>
+            <p>El mantenimiento implica corregir errores y actualizar el software.</p>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/ZfnZ0S9ffW0" title="Mantenimiento de Software" frameborder="0" allowfullscreen></iframe>
+        </section>
 
-            <div class="fase">
-                <h3><i class="fas fa-bug"></i> Pruebas</h3>
-                <p>El software es probado para identificar y corregir errores.</p>
-                <img src="imagenes/pruebas.png" alt="Pruebas del software" class="img-fase">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/0ImQ5yq1FZA" title="Pruebas de Software" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <section id="caso-estudio" class="container">
+            <h2>Caso de Estudio</h2>
+            <p>Veamos un caso de estudio de cómo se aplican todas estas fases en un proyecto real.</p>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/lXgPOiBdcM8" title="Caso de Estudio de Desarrollo de Software" frameborder="0" allowfullscreen></iframe>
+        </section>
 
-            </div>
-
-            <div class="fase">
-                <h3><i class="fas fa-tools"></i> Mantenimiento</h3>
-                <p>Se realizan mejoras y soluciones a problemas detectados por los usuarios.</p>
-                <img src="imagenes/mantenimiento.png" alt="Mantenimiento del software" class="img-fase">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/ZfnZ0S9ffW0" title="Mantenimiento de Software" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-       
-    </section>
-
-    <section id="caso-estudio" class="container">
-        <h2>Caso de Estudio</h2>
-        <p>Un ejemplo práctico del ciclo de vida del software aplicado en un proyecto de desarrollo para una empresa de e-commerce. 
-        Desde la fase de recolección de requisitos, hasta la fase de mantenimiento del software entregado.</p>
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Caso de estudio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
-
-    <section id="evaluacion" class="container">
-        <h2>Evalúa tu conocimiento</h2>
-        <p>Responde las siguientes preguntas para evaluar lo aprendido:</p>
-        <form id="evaluacion-form">
-            <label for="respuesta1">¿Cuál es la primera fase del ciclo de vida del software?</label>
-            <input type="text" id="respuesta1" name="respuesta1" required><br>
-
-            <label for="respuesta2">¿Cómo se llaman las distintas etapas del ciclo?</label>
-            <input type="text" id="respuesta2" name="respuesta2" required><br>
-
-            <input type="submit" value="Enviar respuestas">
-        </form>
-    </section>
-
-    <section id="faq" class="container">
-        <h2>Preguntas Frecuentes</h2>
-        <div class="faq-item">
-            <h3><i class="fas fa-question-circle"></i> ¿Qué es el ciclo de vida del software?</h3>
-            <p>Es el conjunto de fases que atraviesa un software desde su creación hasta su mantenimiento.</p>
-        </div>
-        <div class="faq-item">
-            <h3><i class="fas fa-question-circle"></i> ¿Qué diferencia hay entre las metodologías en cascada y ágiles?</h3>
-            <p>El modelo en cascada sigue un enfoque secuencial, mientras que las metodologías ágiles permiten flexibilidad y adaptación a lo largo del proyecto.</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>Blog creado para enseñar el ciclo de vida del software. Contáctanos para más información.</p>
-    </footer>
+        <section id="preguntas-frecuentes" class="container">
+            <h2>Preguntas Frecuentes</h2>
+            <p>Aquí respondemos las preguntas más comunes acerca del ciclo de vida del software.</p>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/pZbhrNSWDCI" title="Preguntas Frecuentes sobre el Ciclo de Vida del Software" frameborder="0" allowfullscreen></iframe>
+        </section>
+    </main>
 
     <script src="script.js"></script>
 </body>
