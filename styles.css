@@ -1,91 +1,131 @@
-/* Estilo general del cuerpo */
+/* Estilos generales */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
+  color: #333;
 }
 
-/* Encabezado */
+h1, h2 {
+  font-weight: 700;
+  color: #007BFF;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Estilos de cabecera */
 header {
-  background: #007BFF; /* Tonalidad de azul principal */
+  background-color: #007BFF;
   color: white;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
   padding: 20px;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Menú de navegación */
+.logo img {
+  width: 50px;
+  margin-right: 15px;
+}
+
 nav ul {
   list-style: none;
-  padding: 0;
+  display: flex;
+  gap: 20px;
 }
 
 nav ul li {
   display: inline;
-  margin-right: 10px;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
 }
 
-/* Secciones */
+/* Estilos de secciones */
 section {
   margin: 20px;
   padding: 20px;
-  background: #E9F5FF; /* Segundo tono de azul */
+  background: #E9F5FF;
   border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Acordeón */
-.accordion {
-  margin-bottom: 15px;
-}
-
+/* Estilo de los acordeones */
 .accordion-btn {
   background-color: #007BFF;
   color: white;
-  padding: 10px;
+  padding: 15px;
   border: none;
+  font-size: 18px;
   width: 100%;
   text-align: left;
-  font-size: 18px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  outline: none;
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 8px;
 }
 
 .accordion-btn:hover {
   background-color: #0056b3;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out;
+  padding: 20px;
   background-color: white;
+  display: none;
   border: 1px solid #ddd;
-  padding: 0 18px;
+  border-radius: 8px;
 }
 
-.accordion-content p, .accordion-content img {
-  margin: 10px 0;
+.accordion.active .accordion-content {
+  display: block;
+  max-height: 1000px;
+  transition: max-height 0.5s ease-in;
 }
 
-/* Formularios */
-form input, form textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+/* Barra de progreso */
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 5px;
+  background-color: #007BFF;
+  z-index: 100;
 }
 
+/* Estilos del botón */
 button {
   background-color: #007BFF;
   color: white;
-  padding: 10px;
+  padding: 12px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos del footer */
+footer {
+  background-color: #007BFF;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
