@@ -5,87 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ciclo de Vida del Software</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Ciclo de Vida del Software</h1>
-        <p>Un recorrido instructivo para aprender el proceso completo.</p>
+        <div class="logo">
+            <h1>Ciclo de Vida del Software</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#introduccion">Introducción</a></li>
+                <li><a href="#fases">Fases</a></li>
+                <li><a href="#caso-estudio">Caso de Estudio</a></li>
+                <li><a href="#evaluacion">Evaluación</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="introduccion">
+    <section id="introduccion" class="container">
         <h2>Introducción</h2>
         <p>El ciclo de vida del software describe todas las etapas por las que pasa un software, desde su concepción hasta su mantenimiento. 
         Es esencial para el éxito de cualquier proyecto de desarrollo, garantizando que los requisitos se cumplan a lo largo del tiempo.
         Las metodologías más comunes incluyen el modelo en cascada y las metodologías ágiles.</p>
+        <img src="imagenes/introduccion.jpg" alt="Introducción al ciclo de vida del software" class="img-responsive">
     </section>
 
-    <section id="fases">
+    <section id="fases" class="container">
         <h2>Fases del Ciclo de Vida del Software</h2>
-        <div class="accordion">
-            <h3>Fase 1: Recolección de Requisitos</h3>
-            <div class="content">
-                <p>En esta fase se identifican y documentan las necesidades y expectativas del cliente. Es crucial para evitar errores a futuro.</p>
-                <img src="imagenes/recoleccion.png" alt="Recolección de requisitos">
+        <div class="grid">
+            <div class="fase">
+                <h3><i class="fas fa-pencil-alt"></i> Recolección de Requisitos</h3>
+                <p>Se identifican y documentan las necesidades del cliente.</p>
+                <img src="imagenes/recoleccion.png" alt="Recolección de requisitos" class="img-fase">
             </div>
 
-            <h3>Fase 2: Diseño</h3>
-            <div class="content">
-                <p>Se define la arquitectura del sistema y el diseño de los componentes. Aquí se visualizan los diagramas y se toman decisiones clave de tecnología.</p>
-                <img src="imagenes/diseno.png" alt="Diseño del sistema">
+            <div class="fase">
+                <h3><i class="fas fa-cogs"></i> Diseño</h3>
+                <p>Se define la arquitectura del sistema y el diseño de los componentes.</p>
+                <img src="imagenes/diseno.png" alt="Diseño del sistema" class="img-fase">
             </div>
 
-            <h3>Fase 3: Implementación</h3>
-            <div class="content">
-                <p>Es la fase donde se comienza a escribir código y a implementar la solución. Los programadores trabajan con base en los requerimientos y el diseño previo.</p>
-                <img src="imagenes/implementacion.png" alt="Implementación del software">
+            <div class="fase">
+                <h3><i class="fas fa-code"></i> Implementación</h3>
+                <p>Los programadores comienzan a escribir código basado en los requerimientos.</p>
+                <img src="imagenes/implementacion.png" alt="Implementación del software" class="img-fase">
             </div>
 
-            <h3>Fase 4: Pruebas</h3>
-            <div class="content">
-                <p>En esta fase, el software es probado para identificar y corregir errores. Se realizan pruebas unitarias, de integración y de usuario.</p>
-                <img src="imagenes/pruebas.png" alt="Pruebas del software">
+            <div class="fase">
+                <h3><i class="fas fa-bug"></i> Pruebas</h3>
+                <p>El software es probado para identificar y corregir errores.</p>
+                <img src="imagenes/pruebas.png" alt="Pruebas del software" class="img-fase">
             </div>
 
-            <h3>Fase 5: Mantenimiento</h3>
-            <div class="content">
-                <p>Después de la entrega, el software entra en fase de mantenimiento, donde se realizan mejoras o se solucionan problemas detectados por los usuarios.</p>
-                <img src="imagenes/mantenimiento.png" alt="Mantenimiento del software">
+            <div class="fase">
+                <h3><i class="fas fa-tools"></i> Mantenimiento</h3>
+                <p>Se realizan mejoras y soluciones a problemas detectados por los usuarios.</p>
+                <img src="imagenes/mantenimiento.png" alt="Mantenimiento del software" class="img-fase">
             </div>
         </div>
     </section>
 
-    <section id="caso-estudio">
+    <section id="caso-estudio" class="container">
         <h2>Caso de Estudio</h2>
         <p>Un ejemplo práctico del ciclo de vida del software aplicado en un proyecto de desarrollo para una empresa de e-commerce. 
         Desde la fase de recolección de requisitos, hasta la fase de mantenimiento del software entregado.</p>
-        <video controls>
-            <source src="videos/caso_estudio.mp4" type="video/mp4">
-            Tu navegador no soporta la reproducción de este video.
-        </video>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Caso de estudio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
-    <section id="evaluacion">
+    <section id="evaluacion" class="container">
         <h2>Evalúa tu conocimiento</h2>
         <p>Responde las siguientes preguntas para evaluar lo aprendido:</p>
         <form id="evaluacion-form">
             <label for="respuesta1">¿Cuál es la primera fase del ciclo de vida del software?</label>
-            <input type="text" id="respuesta1" name="respuesta1"><br>
+            <input type="text" id="respuesta1" name="respuesta1" required><br>
 
             <label for="respuesta2">¿Cómo se llaman las distintas etapas del ciclo?</label>
-            <input type="text" id="respuesta2" name="respuesta2"><br>
+            <input type="text" id="respuesta2" name="respuesta2" required><br>
 
             <input type="submit" value="Enviar respuestas">
         </form>
     </section>
 
-    <section id="faq">
+    <section id="faq" class="container">
         <h2>Preguntas Frecuentes</h2>
         <div class="faq-item">
-            <h3>¿Qué es el ciclo de vida del software?</h3>
+            <h3><i class="fas fa-question-circle"></i> ¿Qué es el ciclo de vida del software?</h3>
             <p>Es el conjunto de fases que atraviesa un software desde su creación hasta su mantenimiento.</p>
         </div>
         <div class="faq-item">
-            <h3>¿Qué diferencia hay entre las metodologías en cascada y ágiles?</h3>
+            <h3><i class="fas fa-question-circle"></i> ¿Qué diferencia hay entre las metodologías en cascada y ágiles?</h3>
             <p>El modelo en cascada sigue un enfoque secuencial, mientras que las metodologías ágiles permiten flexibilidad y adaptación a lo largo del proyecto.</p>
         </div>
     </section>
