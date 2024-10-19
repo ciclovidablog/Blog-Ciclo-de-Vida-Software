@@ -3,103 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Ciclo de Vida del Software</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>Ciclo de Vida del Software</h1>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#introduction">Introducción</a></li>
+                <li><a href="#phases">Fases</a></li>
+                <li><a href="#evaluation">Evaluación</a></li>
+                <li><a href="#faq">Preguntas Frecuentes</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Barra de navegación -->
-    <aside id="sidebar">
+    <section id="introduction" class="container">
+        <h2>Introducción</h2>
+        <p>El ciclo de vida del software es un modelo estructurado que describe las fases por las cuales pasa el desarrollo de software desde la planificación hasta su retiro...</p>
+        <iframe src="https://www.youtube.com/embed/yourvideoID1" title="Video Introducción"></iframe>
+        <button class="scroll-btn" onclick="scrollToSection('phases')">Ir a Fases</button>
+    </section>
+
+    <section id="phases" class="container">
+        <h2>Fases del Ciclo de Vida del Software</h2>
         <ul>
-            <li><a href="#introduccion">Introducción</a></li>
-            <li><a href="#recoleccion-requisitos">Recolección de Requisitos</a></li>
-            <li><a href="#diseno">Diseño</a></li>
-            <li><a href="#implementacion">Implementación</a></li>
-            <li><a href="#pruebas">Pruebas</a></li>
-            <li><a href="#mantenimiento">Mantenimiento</a></li>
-            <li><a href="#evaluacion">Evaluación</a></li>
-            <li><a href="#caso-estudio">Caso de Estudio</a></li>
-            <li><a href="#preguntas-frecuentes">Preguntas Frecuentes</a></li>
-            <li><a href="#comentarios">Comentarios</a></li>
+            <li><span title="Esta es la primera fase">Planificación</span></li>
+            <li>Análisis</li>
+            <li>Diseño</li>
+            <li>Implementación</li>
+            <li>Pruebas</li>
+            <li>Mantenimiento</li>
         </ul>
-    </aside>
+        <iframe src="https://www.youtube.com/embed/yourvideoID2" title="Video Fases"></iframe>
+        <button class="scroll-btn" onclick="scrollToSection('evaluation')">Ir a Evaluación</button>
+    </section>
 
-    <main id="content">
-        <!-- Secciones del blog con videos e imágenes -->
-        <section id="introduccion" class="container">
-            <h1>Introducción al Ciclo de Vida del Software</h1>
-            <p>El ciclo de vida del software describe las fases por las que pasa un proyecto desde su concepción hasta su mantenimiento. Es fundamental entenderlo para tener éxito en el desarrollo de software.</p>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/HLZ5OfXPZrM" title="Introducción al Ciclo de Vida del Software" frameborder="0" allowfullscreen></iframe>
-        </section>
+    <section id="evaluation" class="container">
+        <h2>Evaluación</h2>
+        <p>Responde las siguientes preguntas para evaluar tu comprensión del Ciclo de Vida del Software:</p>
+        <form>
+            <label for="question1">¿Cuál es la fase más importante para ti?</label><br>
+            <input type="text" id="question1" name="question1"><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
 
-        <section id="recoleccion-requisitos" class="container">
-            <h2>Recolección de Requisitos</h2>
-            <p>En esta fase se define lo que el cliente necesita del software. Es crucial para el éxito del proyecto.</p>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/qKqVvTox88U" title="Recolección de Requisitos" frameborder="0" allowfullscreen></iframe>
-        </section>
+    <section id="faq" class="container">
+        <h2>Preguntas Frecuentes</h2>
+        <ul>
+            <li>¿Qué es el ciclo de vida del software?</li>
+            <li>¿Por qué es importante seguir un ciclo de vida en el desarrollo?</li>
+        </ul>
+    </section>
 
-        <section id="diseno" class="container">
-            <h2>Diseño del Software</h2>
-            <p>El diseño estructura cómo funcionará el software. Se definen aspectos técnicos y arquitectónicos clave.</p>
-            <img src="assets/diseno-software.jpg" alt="Diagrama de diseño de software" width="100%">
-        </section>
+    <section id="contact" class="container">
+        <h2>Contacto</h2>
+        <p>¿Tienes dudas? Contáctanos a través del formulario.</p>
+        <form>
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="message">Mensaje:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
 
-        <section id="implementacion" class="container">
-            <h2>Implementación</h2>
-            <p>La implementación es la fase donde el código se escribe siguiendo el diseño previamente definido.</p>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/nFg9HHLn5wM" title="Implementación del Software" frameborder="0" allowfullscreen></iframe>
-        </section>
-
-        <section id="pruebas" class="container">
-            <h2>Pruebas</h2>
-            <p>En la fase de pruebas se verifica que el software funcione correctamente y cumpla con los requisitos.</p>
-            <img src="assets/pruebas-software.jpg" alt="Proceso de pruebas" width="100%">
-        </section>
-
-        <section id="mantenimiento" class="container">
-            <h2>Mantenimiento</h2>
-            <p>El mantenimiento asegura que el software siga funcionando correctamente con el tiempo, corrigiendo errores y añadiendo mejoras.</p>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/ZfnZ0S9ffW0" title="Mantenimiento de Software" frameborder="0" allowfullscreen></iframe>
-        </section>
-
-        <section id="evaluacion" class="container">
-            <h2>Evaluación</h2>
-            <p>Evalúa tu conocimiento con el siguiente cuestionario. ¡Sigue aprendiendo y avanzando!</p>
-            <form action="submit-evaluation.php" method="POST">
-                <label for="pregunta1">¿Qué es lo más importante en la fase de recolección de requisitos?</label><br>
-                <input type="text" id="pregunta1" name="respuesta1"><br><br>
-                
-                <label for="pregunta2">¿Qué rol tiene el diseño en el desarrollo de software?</label><br>
-                <input type="text" id="pregunta2" name="respuesta2"><br><br>
-
-                <input type="submit" value="Enviar Evaluación">
-            </form>
-        </section>
-
-        <section id="caso-estudio" class="container">
-            <h2>Caso de Estudio</h2>
-            <p>En este caso de estudio, revisamos cómo se aplican estas fases en un proyecto real de desarrollo de software.</p>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/lXgPOiBdcM8" title="Caso de Estudio" frameborder="0" allowfullscreen></iframe>
-        </section>
-
-        <section id="preguntas-frecuentes" class="container">
-            <h2>Preguntas Frecuentes</h2>
-            <p>Encuentra las respuestas a las dudas más comunes sobre el ciclo de vida del software.</p>
-        </section>
-
-        <section id="comentarios" class="container">
-            <h2>Comentarios</h2>
-            <form action="submit-comment.php" method="POST">
-                <label for="nombre">Nombre:</label><br>
-                <input type="text" id="nombre" name="nombre"><br><br>
-
-                <label for="comentario">Comentario:</label><br>
-                <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea><br><br>
-
-                <input type="submit" value="Enviar Comentario">
-            </form>
-        </section>
-    </main>
+    <footer>
+        <p>&copy; 2024 Ciclo de Vida del Software. Referencias respetadas.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>

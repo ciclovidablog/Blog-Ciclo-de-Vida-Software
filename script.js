@@ -1,4 +1,3 @@
-// Animación para mostrar secciones al hacer scroll
 document.addEventListener('DOMContentLoaded', function() {
     const containers = document.querySelectorAll('.container');
     
@@ -14,3 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(container);
     });
 });
+
+function scrollToSection(sectionId) {
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+}
