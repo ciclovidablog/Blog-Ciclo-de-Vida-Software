@@ -68,9 +68,40 @@
         .question {
             margin: 10px 0;
         }
+        /* Nueva sección de comentarios */
+        .comments-section {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+        .comments-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .comments-form textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            resize: vertical;
+        }
+        .comments-form button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            align-self: flex-end;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <img src="ruta_del_logo/logo.png" alt="Logo de la Empresa" style="width:150px; height:auto; float: left; margin-right: 20px;">
+    </header>
+    
     <header>
         <h1>Blog del Ciclo de Desarrollo de Software</h1>
     </header>
@@ -90,7 +121,7 @@
             <div class="content">
                 <p>En esta fase, el equipo de desarrollo se reúne con los interesados (clientes, usuarios, etc.) para comprender sus necesidades, especificaciones y expectativas. Un ejemplo de una actividad perteneciente a la fase de comunicación son las entrevistas.</p>
                 <p>Este video, hecho por "creador", explica de manera más detallada cómo comunicarse de manera apropiada con el cliente:</p>
-                <iframe width="100%" height="315" src="video_link_1" title="Video sobre Comunicación" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=rWv1NAc_DDywpbEZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
         <div class="section">
@@ -152,101 +183,84 @@
                 <iframe width="100%" height="315" src="video_link_9" title="Video sobre Mantenimiento" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
-
-        <div class="evaluation">
-            <h2>Evaluación</h2>
-            <p>Por favor, responde las siguientes preguntas:</p>
-            <form id="evaluationForm">
-                <div class="question">
-                    <label>1. ¿Cuál es la primera fase del ciclo de desarrollo de software?</label><br>
-                    <input type="radio" name="question1" value="a"> Comunicación<br>
-                    <input type="radio" name="question1" value="b"> Pruebas<br>
-                    <input type="radio" name="question1" value="c"> Codificación<br>
-                </div>
-                <div class="question">
-                    <label>2. ¿Qué se analiza durante la fase de Viabilidad?</label><br>
-                    <input type="radio" name="question2" value="a"> El costo del software<br>
-                    <input type="radio" name="question2" value="b"> La rentabilidad y éxito potencial<br>
-                    <input type="radio" name="question2" value="c"> Las preferencias del cliente<br>
-                </div>
-                <div class="question">
-                    <label>3. ¿En qué fase se documentan los requisitos del software?</label><br>
-                    <input type="radio" name="question3" value="a"> Análisis<br>
-                    <input type="radio" name="question3" value="b"> Diseño<br>
-                    <input type="radio" name="question3" value="c"> Implementación<br>
-                </div>
-                <div class="question">
-                    <label>4. ¿Qué actividad se realiza durante la fase de Codificación?</label><br>
-                    <input type="radio" name="question4" value="a"> Creación de prototipos<br>
-                    <input type="radio" name="question4" value="b"> Programación del software<br>
-                    <input type="radio" name="question4" value="c"> Pruebas de sistema<br>
-                </div>
-                <div class="question">
-                    <label>5. ¿Qué ocurre en la fase de Implementación?</label><br>
-                    <input type="radio" name="question5" value="a"> Entrega del software al cliente<br>
-                    <input type="radio" name="question5" value="b"> Revisión del código<br>
-                    <input type="radio" name="question5" value="c"> Formación del equipo de desarrollo<br>
-                </div>
-                <div class="question">
-                    <label>6. ¿Cuál es el propósito del mantenimiento en el ciclo de desarrollo de software?</label><br>
-                    <input type="radio" name="question6" value="a"> Mejorar el rendimiento del software<br>
-                    <input type="radio" name="question6" value="b"> Arreglar errores y actualizar el software<br>
-                    <input type="radio" name="question6" value="c"> Crear nuevos módulos de software<br>
-                </div>
-                <div class="question">
-                    <label>7. ¿Cuál es la importancia de la fase de Pruebas?</label><br>
-                    <input type="radio" name="question7" value="a"> Garantizar que el software sea eficiente y funcione correctamente<br>
-                    <input type="radio" name="question7" value="b"> Recoger comentarios del cliente<br>
-                    <input type="radio" name="question7" value="c"> Desarrollar nuevas funcionalidades<br>
-                </div>
-                <input type="submit" value="Enviar Evaluación">
+        <body>
+            <form id="quiz">
+            <h3>1. ¿Cuál es el primer paso del ciclo de vida del software?</h3>
+            <label><input type="radio" name="q1" value="correct"> Análisis de requisitos</label><br>
+            <label><input type="radio" name="q1" value="incorrect"> Diseño</label><br>
+            <label><input type="radio" name="q1" value="incorrect"> Implementación</label><br>
+        
+            <h3>2. ¿Qué se realiza en la fase de implementación?</h3>
+            <label><input type="radio" name="q2" value="incorrect"> Planificación</label><br>
+            <label><input type="radio" name="q2" value="correct"> Codificación</label><br>
+            <label><input type="radio" name="q2" value="incorrect"> Pruebas</label><br>
+        
+            <h3>3. ¿Cuál es la última fase del ciclo de vida del software?</h3>
+            <label><input type="radio" name="q3" value="correct"> Mantenimiento</label><br>
+            <label><input type="radio" name="q3" value="incorrect"> Codificación</label><br>
+            <label><input type="radio" name="q3" value="incorrect"> Diseño</label><br>
+        
+            <h3>4. ¿Qué se realiza durante la fase de análisis de requisitos?</h3>
+            <label><input type="radio" name="q4" value="incorrect"> Diseñar la interfaz de usuario</label><br>
+            <label><input type="radio" name="q4" value="correct"> Identificar y documentar los requisitos del software</label><br>
+            <label><input type="radio" name="q4" value="incorrect"> Implementar el código</label><br>
+        
+            <h3>5. ¿Cuál es el propósito principal de la fase de diseño en el ciclo de vida del software?</h3>
+            <label><input type="radio" name="q5" value="correct"> Especificar la arquitectura y los componentes del sistema</label><br>
+            <label><input type="radio" name="q5" value="incorrect"> Realizar las pruebas del software</label><br>
+            <label><input type="radio" name="q5" value="incorrect"> Identificar los errores</label><br>
+        
+            <h3>6. ¿Qué tipo de pruebas se realizan para verificar que el software cumple con los requisitos establecidos?</h3>
+            <label><input type="radio" name="q6" value="incorrect"> Pruebas unitarias</label><br>
+            <label><input type="radio" name="q6" value="correct"> Pruebas de aceptación</label><br>
+            <label><input type="radio" name="q6" value="incorrect"> Pruebas de integración</label><br>
+        
+            <h3>7. ¿Cuál de las siguientes tareas pertenece a la fase de implementación?</h3>
+            <label><input type="radio" name="q7" value="incorrect"> Definir los requisitos del sistema</label><br>
+            <label><input type="radio" name="q7" value="correct"> Escribir el código fuente del software</label><br>
+            <label><input type="radio" name="q7" value="incorrect"> Validar las funcionalidades del software</label><br>
+        
+            <h3>8. ¿Cuál es el objetivo de la fase de mantenimiento en el ciclo de vida del software?</h3>
+            <label><input type="radio" name="q8" value="correct"> Mejorar el rendimiento y corregir errores después de la implementación</label><br>
+            <label><input type="radio" name="q8" value="incorrect"> Rediseñar la arquitectura del software</label><br>
+            <label><input type="radio" name="q8" value="incorrect"> Crear la documentación técnica</label><br>
+        
+            <input type="button" value="Evaluar" onclick="evaluateQuiz()">
+        </form>
+        
+        <p id="result"></p>    
+        </body>
+        
+        <!-- Sección de comentarios -->
+        <div class="comments-section">
+            <h3>Sección de Dudas y Comentarios</h3>
+            <form class="comments-form" action="https://formspree.io/f/mnnqnnqe" method="POST">
+                <textarea name="message" rows="5" placeholder="Escribe tu comentario aquí..." required></textarea>
+                <input type="email" name="email" placeholder="Tu correo (opcional)">
+                <button type="submit">Enviar</button>
             </form>
-            <div id="evaluationResult" class="result"></div>
+            <p>En caso de alguna duda, ponerse en contacto con: <a href="mailto:ciclovidablog@gmail.com">ciclovidablog@gmail.com</a></p>
         </div>
-
-        <div class="comments">
-            <h2>Comentarios</h2>
-            <p>¿Tienes alguna duda o comentario? Por favor, escríbenos:</p>
-            <form action="mailto:correo@ejemplo.com" method="post" enctype="text/plain">
-                <textarea rows="4" cols="50" placeholder="Escribe tu comentario aquí..."></textarea><br><br>
-                <input type="submit" value="Enviar Comentario">
-            </form>
-        </div>
+        
     </div>
 
     <footer>
-        <p>© 2024 Blog del Ciclo de Desarrollo de Software. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Blog del Ciclo de Desarrollo de Software</p>
     </footer>
 
     <script>
-        const toggleButtons = document.querySelectorAll('.toggle-button');
-        toggleButtons.forEach(button => {
+        const buttons = document.querySelectorAll('.toggle-button');
+        buttons.forEach(button => {
             button.addEventListener('click', () => {
                 const content = button.nextElementSibling;
-                content.style.display = content.style.display === 'none' ? 'block' : 'none';
-            });
-        });
-
-        document.getElementById('evaluationForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const answers = {
-                question1: 'a',
-                question2: 'b',
-                question3: 'a',
-                question4: 'b',
-                question5: 'a',
-                question6: 'b',
-                question7: 'a'
-            };
-            let score = 0;
-            const formData = new FormData(this);
-            for (let [question, answer] of formData.entries()) {
-                if (answers[question] === answer) {
-                    score++;
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                } else {
+                    content.style.display = 'block';
                 }
-            }
-            document.getElementById('evaluationResult').innerText = `Tu puntaje: ${score} de 7`;
+            });
         });
     </script>
 </body>
 </html>
+
