@@ -1,19 +1,12 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const containers = document.querySelectorAll('.container');
-    
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('appear');
-            }
+document.addEventListener("DOMContentLoaded", () => {
+    // Animaciones suaves en la barra de navegación
+    const navLinks = document.querySelectorAll('nav ul li a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            document.querySelector(e.target.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
         });
-    }, { threshold: 0.1 });
-    
-    containers.forEach(container => {
-        observer.observe(container);
     });
 });
-
-function scrollToSection(sectionId) {
-    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-}

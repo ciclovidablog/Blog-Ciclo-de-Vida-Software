@@ -1,120 +1,89 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Didáctico: Ciclo de Vida del Software</title>
+    <title>Software Development Lifecycle Blog</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Barra de navegación -->
     <header>
-        <div class="logo">
-            <h1>Logo de la Empresa</h1>
-        </div>
-        <nav class="navbar">
+        <nav>
             <ul>
-                <li><a href="#introduccion">Introducción</a></li>
-                <li><a href="#fases">Fases del Ciclo de Vida</a></li>
-                <li><a href="#evaluacion">Evaluación</a></li>
-                <li><a href="#dudas">Dudas y Comentarios</a></li>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#phases">Phases</a></li>
+                <li><a href="#case-studies">Case Studies</a></li>
+                <li><a href="#evaluation">Evaluation</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="introduccion">
-            <h2>Introducción</h2>
-            <p>El ciclo de vida del software es un proceso esencial en el desarrollo de aplicaciones. En esta sección, aprenderás sobre sus fases y su importancia.</p>
-            <img src="images/introduccion.jpg" alt="Introducción al Ciclo de Vida del Software">
-            <video controls>
-                <source src="videos/introduccion.mp4" type="video/mp4">
-                Tu navegador no soporta la etiqueta de video.
-            </video>
-        </section>
+    <!-- Sección de introducción -->
+    <section id="intro">
+        <h1>Welcome to the Software Development Lifecycle Blog</h1>
+        <p>Learn everything about the SDLC in an easy and engaging way.</p>
+    </section>
 
-        <section id="fases">
-            <h2>Fases del Ciclo de Vida</h2>
-            <div class="fase">
-                <h3>1. Análisis de Requisitos</h3>
-                <p>En esta fase, se recogen y analizan los requisitos del software. Es fundamental entender las necesidades del cliente.</p>
-                <img src="images/analisis.jpg" alt="Análisis de Requisitos">
-                <video controls>
-                    <source src="videos/analisis.mp4" type="video/mp4">
-                    Tu navegador no soporta la etiqueta de video.
-                </video>
-            </div>
-            <div class="fase">
-                <h3>2. Diseño</h3>
-                <p>El diseño del software establece la arquitectura y cómo interactuarán los componentes del sistema.</p>
-                <img src="images/diseño.jpg" alt="Diseño del Software">
-                <video controls>
-                    <source src="videos/diseño.mp4" type="video/mp4">
-                    Tu navegador no soporta la etiqueta de video.
-                </video>
-            </div>
-            <div class="fase">
-                <h3>3. Implementación</h3>
-                <p>La implementación implica el desarrollo del software. Los programadores crean el código según el diseño establecido.</p>
-                <img src="images/implementacion.jpg" alt="Implementación del Software">
-                <video controls>
-                    <source src="videos/implementacion.mp4" type="video/mp4">
-                    Tu navegador no soporta la etiqueta de video.
-                </video>
-            </div>
-            <div class="fase">
-                <h3>4. Pruebas</h3>
-                <p>Las pruebas son esenciales para asegurar que el software funciona correctamente y cumple con los requisitos.</p>
-                <img src="images/pruebas.jpg" alt="Pruebas del Software">
-                <video controls>
-                    <source src="videos/pruebas.mp4" type="video/mp4">
-                    Tu navegador no soporta la etiqueta de video.
-                </video>
-            </div>
-            <div class="fase">
-                <h3>5. Mantenimiento</h3>
-                <p>El mantenimiento se refiere a las actualizaciones y mejoras del software después de su implementación.</p>
-                <img src="images/mantenimiento.jpg" alt="Mantenimiento del Software">
-                <video controls>
-                    <source src="videos/mantenimiento.mp4" type="video/mp4">
-                    Tu navegador no soporta la etiqueta de video.
-                </video>
-            </div>
-        </section>
+    <!-- Fases del ciclo de vida del software -->
+    <section id="phases">
+        <h2>Phases of the Software Development Lifecycle</h2>
+        <div class="phase">
+            <h3>Planning</h3>
+            <p>Description of the planning phase.</p>
+            <video src="video/planning.mp4" controls></video>
+        </div>
+        <div class="phase">
+            <h3>Design</h3>
+            <p>Description of the design phase.</p>
+            <video src="video/design.mp4" controls></video>
+        </div>
+        <div class="phase">
+            <h3>Implementation</h3>
+            <p>Description of the implementation phase.</p>
+            <video src="video/implementation.mp4" controls></video>
+        </div>
+        <!-- Agrega más fases aquí -->
+    </section>
 
-        <section id="evaluacion">
-            <h2>Evaluación</h2>
-            <p>¿Cómo evalúas tu comprensión sobre el ciclo de vida del software?</p>
-            <form>
-                <label for="pregunta1">1. ¿Cuál es la primera fase del ciclo de vida del software?</label><br>
-                <input type="radio" id="opcion1a" name="pregunta1" value="análisis">
-                <label for="opcion1a">Análisis de Requisitos</label><br>
-                <input type="radio" id="opcion1b" name="pregunta1" value="diseño">
-                <label for="opcion1b">Diseño</label><br>
-                <input type="radio" id="opcion1c" name="pregunta1" value="implementación">
-                <label for="opcion1c">Implementación</label><br>
+    <!-- Casos de estudio -->
+    <section id="case-studies">
+        <h2>Case Studies</h2>
+        <p>Explore examples of software projects and how they evolved through the SDLC.</p>
+        <div class="case">
+            <h3>Case Study 1</h3>
+            <p>Details of the first case study.</p>
+        </div>
+        <div class="case">
+            <h3>Case Study 2</h3>
+            <p>Details of the second case study.</p>
+        </div>
+        <!-- Agrega más casos de estudio aquí -->
+    </section>
 
-                <label for="pregunta2">2. ¿Qué fase se encarga de corregir errores en el software?</label><br>
-                <input type="radio" id="opcion2a" name="pregunta2" value="pruebas">
-                <label for="opcion2a">Pruebas</label><br>
-                <input type="radio" id="opcion2b" name="pregunta2" value="mantenimiento">
-                <label for="opcion2b">Mantenimiento</label><br>
+    <!-- Evaluación -->
+    <section id="evaluation">
+        <h2>Test Your Knowledge</h2>
+        <form action="mailto:your-email@example.com" method="post">
+            <label>What is the first phase of the SDLC?</label>
+            <input type="text" name="answer1" required>
+            <label>What happens during the design phase?</label>
+            <input type="text" name="answer2" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
 
-                <input type="submit" value="Enviar">
-            </form>
-        </section>
-
-        <section id="dudas">
-            <h2>Dudas y Comentarios</h2>
-            <p>Si tienes preguntas o comentarios, por favor escríbelos aquí:</p>
-            <form>
-                <textarea rows="4" cols="50" placeholder="Escribe tu comentario o duda aquí..."></textarea><br>
-                <input type="submit" value="Enviar">
-            </form>
-        </section>
-    </main>
+    <!-- Contacto -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+    </section>
 
     <footer>
-        <p>Blog de Ciclo de Vida del Software &copy; 2024. Todos los derechos reservados.</p>
+        <p>Blog del ciclo de vida del software © 2024. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
