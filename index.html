@@ -3,167 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ciclo de Vida del Software</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Blog del Ciclo de Desarrollo de Software</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .toggle-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            border-radius: 5px;
+        }
+        .content {
+            display: none;
+            padding: 10px;
+            border: 1px solid #007BFF;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f0f4f8;
+        }
+        .evaluation, .comments, .contact {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Ciclo de Vida del Software</h1>
-        <nav>
-            <ul>
-                <li><a href="#introduccion">Introducción</a></li>
-                <li><a href="#fases">Fases</a></li>
-                <li><a href="#evaluacion">Evaluación</a></li>
-                <li><a href="#comentarios">Comentarios</a></li>
-            </ul>
-        </nav>
+        <h1>Blog del Ciclo de Desarrollo de Software</h1>
     </header>
-
-    <main>
-        <section id="introduccion">
+    <div class="container">
+        <div class="section">
             <h2>Introducción</h2>
             <p>Bienvenid@ a nuestro blog del ciclo de desarrollo de software! Alguna vez te has preguntado cómo es el proceso detrás de la creación de alguna red social, juego o sitio web? En este blog te presentaremos acerca del proceso que requiere un proyecto de software.</p>
-            <video controls src="video_link_intro.mp4"></video>
-        </section>
+        </div>
+        <div class="section">
+            <h2>¿En qué consiste el ciclo de desarrollo de software?</h2>
+            <p>El ciclo de desarrollo de software es un método interactivo que facilita la creación de sistemas de información, este describe todas las tareas necesarias que un proyecto de este área necesita contener para poder garantizar su eficiencia y resultados al cliente que lo requiere, seguir este proceso da como resultado un producto completo y efectivo.</p>
+        </div>
 
-        <section id="fases">
-            <h2>Fases del Ciclo de Vida</h2>
-
-            <div class="phase">
-                <h3>1. Comunicación</h3>
-                <p>En esta fase, se recopilan los requisitos y se establecen expectativas claras con el cliente.</p>
-                <button class="toggle-content">Más Información</button>
-                <div class="content">
-                    <p>Es fundamental que todas las partes interesadas estén de acuerdo sobre las expectativas y el alcance del proyecto.</p>
-                </div>
-                <video controls src="video_link_comunicacion.mp4"></video>
+        <h2>Pasos del Ciclo de Desarrollo de Software</h2>
+        <div class="section">
+            <button class="toggle-button">Comunicación</button>
+            <div class="content">
+                <p>En esta fase, el equipo de desarrollo se reúne con los interesados (clientes, usuarios, etc.) para comprender sus necesidades, especificaciones y expectativas. Un ejemplo de una actividad perteneciente a la fase de comunicación son las entrevistas.</p>
+                <p>Este video, hecho por "creador", explica de manera más detallada cómo comunicarse de manera apropiada con el cliente:</p>
+                <iframe width="100%" height="315" src="video_link_1" title="Video sobre Comunicación" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-
-            <div class="phase">
-                <h3>2. Análisis</h3>
-                <p>Se analizan los requisitos recopilados para definir cómo se construirá el software.</p>
-                <button class="toggle-content">Más Información</button>
-                <div class="content">
-                    <p>Esta fase puede incluir la creación de diagramas de flujo y modelos de datos.</p>
-                </div>
-                <video controls src="video_link_analisis.mp4"></video>
+        </div>
+        <div class="section">
+            <button class="toggle-button">Planificación</button>
+            <div class="content">
+                <p>Una vez recopiladas las especificaciones y detalles del cliente, se comienza a hacer un plan de acción para la realización efectiva del proyecto.</p>
+                <p>En este video interactivo de YouTube de parte de KZI Kainezia, se explica los pasos necesarios para hacer una planeación adecuada:</p>
+                <iframe width="100%" height="315" src="video_link_2" title="Video sobre Planificación" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-
-            <div class="phase">
-                <h3>3. Diseño</h3>
-                <p>Se diseñan la arquitectura y el diseño del software basado en los requisitos.</p>
-                <button class="toggle-content">Más Información</button>
-                <div class="content">
-                    <p>El diseño incluye la interfaz de usuario y la interacción del software con otras aplicaciones.</p>
-                </div>
-                <video controls src="video_link_disenio.mp4"></video>
+        </div>
+        <div class="section">
+            <button class="toggle-button">Viabilidad</button>
+            <div class="content">
+                <p>En esta fase, se considera cuán viable es el proyecto mediante la introspección del mercado evaluando la rentabilidad y posible éxito que podría tener.</p>
+                <p>En el siguiente video, se explica cómo una empresa de desarrollo de software hace su valoración de un proyecto:</p>
+                <iframe width="100%" height="315" src="video_link_3" title="Video sobre Viabilidad" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-
-            <div class="phase">
-                <h3>4. Codificación</h3>
-                <p>Los desarrolladores escriben el código para construir el software.</p>
-                <button class="toggle-content">Más Información</button>
-                <div class="content">
-                    <p>Durante esta fase, se llevan a cabo revisiones de código y control de versiones.</p>
-                </div>
-                <video controls src="video_link_codificacion.mp4"></video>
+        </div>
+        <div class="section">
+            <button class="toggle-button">Análisis</button>
+            <div class="content">
+                <p>Una vez dado el visto bueno, se detalla aún más lo que se va a construir. Se recopilan y documentan los requisitos del software.</p>
+                <p>Aquí te dejamos un video que explica con más detalle cómo realizar un análisis de un proyecto:</p>
+                <iframe width="100%" height="315" src="video_link_4" title="Video sobre Análisis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-
-            <div class="phase">
-                <h3>5. Pruebas</h3>
-                <p>El software se prueba para detectar errores y asegurar que cumpla con los requisitos.</p>
-                <button class="toggle-content">Más Información</button>
-                <div class="content">
-                    <p>Las pruebas pueden incluir pruebas unitarias, de integración y de aceptación.</p>
-                </div>
-                <video controls src="video_link_pruebas.mp4"></video>
+        </div>
+        <div class="section">
+            <button class="toggle-button">Diseño</button>
+            <div class="content">
+                <p>Aquí es donde la idea comienza a tomar forma. Se crean prototipos y se define la arquitectura del software.</p>
+                <iframe width="100%" height="315" src="video_link_5" title="Video sobre Diseño" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-
-            <div class="phase">
-                <h3>6. Implementación</h3>
-                <p>El software se entrega al cliente y se pone en producción.</p>
-                <button class="toggle-content">Más Información</button>
-                <div class="content">
-                    <p>Es importante brindar formación y documentación al cliente en esta fase.</p>
-                </div>
-                <video controls src="video_link_implantacion.mp4"></video>
+        </div>
+        <div class="section">
+            <button class="toggle-button">Codificación</button>
+            <div class="content">
+                <p>Puede que la parte más emocionante de hacer un proyecto de software sea construirlo mediante el lenguaje de programación más adecuado para los requisitos.</p>
+                <iframe width="100%" height="315" src="video_link_6" title="Video sobre Codificación" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-
-            <div class="phase">
-                <h3>7. Mantenimiento</h3>
-                <p>Se realizan actualizaciones y mejoras basadas en el feedback del usuario.</p>
-                <button class="toggle-content">Más Información</button>
-                <div class="content">
-                    <p>El mantenimiento es crucial para la longevidad del software y su satisfacción del cliente.</p>
-                </div>
-                <video controls src="video_link_mantenimiento.mp4"></video>
+        </div>
+        <div class="section">
+            <button class="toggle-button">Pruebas</button>
+            <div class="content">
+                <p>Una vez lista la base del proyecto, se comienzan a realizar pruebas para garantizar los resultados del mismo.</p>
+                <iframe width="100%" height="315" src="video_link_7" title="Video sobre Pruebas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-        </section>
-
-        <section id="evaluacion">
-            <h2>Cuestionario</h2>
-            <div id="quiz">
-                <h3>Evaluación de la fase de desarrollo</h3>
-                <form>
-                    <label for="question1">1. ¿Cuál es el objetivo principal de la fase de comunicación?</label><br>
-                    <input type="radio" name="question1" value="a"> A) Definir el lenguaje de programación a utilizar<br>
-                    <input type="radio" name="question1" value="b"> B) Recopilar requisitos y especificaciones<br>
-                    <input type="radio" name="question1" value="c"> C) Realizar pruebas del software<br>
-
-                    <label for="question2">2. ¿Qué se evalúa en la fase de viabilidad?</label><br>
-                    <input type="radio" name="question2" value="a"> A) La calidad del código<br>
-                    <input type="radio" name="question2" value="b"> B) La rentabilidad del proyecto<br>
-                    <input type="radio" name="question2" value="c"> C) Los recursos humanos del equipo<br>
-
-                    <label for="question3">3. ¿En qué fase se crea un prototipo del software?</label><br>
-                    <input type="radio" name="question3" value="a"> A) Análisis<br>
-                    <input type="radio" name="question3" value="b"> B) Diseño<br>
-                    <input type="radio" name="question3" value="c"> C) Codificación<br>
-
-                    <label for="question4">4. ¿Cuál es el propósito principal de la fase de pruebas?</label><br>
-                    <input type="radio" name="question4" value="a"> A) Corregir errores en el software<br>
-                    <input type="radio" name="question4" value="b"> B) Presentar el software al cliente<br>
-                    <input type="radio" name="question4" value="c"> C) Establecer requisitos del software<br>
-
-                    <label for="question5">5. ¿Qué se debe hacer en la fase de mantenimiento?</label><br>
-                    <input type="radio" name="question5" value="a"> A) Realizar nuevas características<br>
-                    <input type="radio" name="question5" value="b"> B) Actualizar el software según feedback del usuario<br>
-                    <input type="radio" name="question5" value="c"> C) Documentar el proceso de desarrollo<br>
-
-                    <label for="question6">6. ¿Qué actividad se realiza durante la implementación?</label><br>
-                    <input type="radio" name="question6" value="a"> A) Se crea un manual de usuario<br>
-                    <input type="radio" name="question6" value="b"> B) Se entrega el software al cliente<br>
-                    <input type="radio" name="question6" value="c"> C) Se realizan pruebas de aceptación<br>
-
-                    <label for="question7">7. ¿Por qué es importante la fase de análisis?</label><br>
-                    <input type="radio" name="question7" value="a"> A) Porque permite definir la arquitectura del software<br>
-                    <input type="radio" name="question7" value="b"> B) Porque ayuda a entender las necesidades del cliente<br>
-                    <input type="radio" name="question7" value="c"> C) Porque se realiza la codificación<br>
-                </form>
-                <button id="submitQuiz">Enviar Cuestionario</button>
+        </div>
+        <div class="section">
+            <button class="toggle-button">Implementación</button>
+            <div class="content">
+                <p>Aquí es donde se hace la entrega del software al cliente para que lo utilice.</p>
+                <iframe width="100%" height="315" src="video_link_8" title="Video sobre Implementación" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-        </section>
+        </div>
+        <div class="section">
+            <button class="toggle-button">Mantenimiento</button>
+            <div class="content">
+                <p>Uno pensaría que aquí es donde se termina el trabajo, pero este no es el caso. Se requiere mantener un ojo al programa.</p>
+                <iframe width="100%" height="315" src="video_link_9" title="Video sobre Mantenimiento" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
 
-        <section id="comentarios">
-            <h2>Comentarios y Dudas</h2>
-            <div id="comments">
-                <h3>Comentarios</h3>
-                <textarea placeholder="Deja tu comentario aquí..."></textarea>
-                <button>Enviar Comentario</button>
-            </div>
-            <div id="doubts">
-                <h3>Dudas</h3>
-                <textarea placeholder="¿Tienes alguna duda? Escribe aquí..."></textarea>
-                <button>Enviar Duda</button>
-            </div>
-        </section>
-    </main>
+        <div class="evaluation">
+            <h2>Evaluación</h2>
+            <p>Por favor, califica cómo consideras que te ha ayudado esta información:</p>
+            <form id="evaluationForm">
+                <label for="evaluation">¿Te ha parecido útil este blog?</label><br>
+                <select id="evaluation" name="evaluation">
+                    <option value="1">1 - Muy poco útil</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 - Muy útil</option>
+                </select><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+        <div class="comments">
+            <h2>Comentarios</h2>
+            <form id="commentForm">
+                <label for="comment">Deja tu comentario:</label><br>
+                <textarea id="comment" name="comment" rows="4" required></textarea><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+        <div class="contact">
+            <h2>Contacto</h2>
+            <p>En caso de alguna duda, ponerse en contacto con <strong>correo@example.com</strong></p>
+        </div>
+    </div>
 
     <footer>
-        <p>En caso de alguna duda, ponerse en contacto con <a href="mailto:tu_correo@ejemplo.com">tu_correo@ejemplo.com</a></p>
         <p>&copy; 2024 Blog del Ciclo de Desarrollo de Software. Todos los derechos reservados.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        document.querySelectorAll('.toggle-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                content.style.display = content.style.display === 'none' || content.style.display === '' ? 'block' : 'none';
+            });
+        });
+
+        document.getElementById('evaluationForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Gracias por su evaluación: ' + document.getElementById('evaluation').value);
+        });
+
+        document.getElementById('commentForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Gracias por tu comentario: ' + document.getElementById('comment').value);
+            document.getElementById('comment').value = ''; // Limpiar el campo
+        });
+    </script>
 </body>
 </html>
