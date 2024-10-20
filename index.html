@@ -55,11 +55,18 @@
             padding: 10px;
             background-color: #f0f4f8;
         }
-        .evaluation, .comments, .contact {
+        .evaluation, .comments {
             margin-top: 20px;
             padding: 15px;
             background-color: #e9ecef;
             border-radius: 5px;
+        }
+        .result {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .question {
+            margin: 10px 0;
         }
     </style>
 </head>
@@ -148,56 +155,97 @@
 
         <div class="evaluation">
             <h2>Evaluación</h2>
-            <p>Por favor, califica cómo consideras que te ha ayudado esta información:</p>
+            <p>Por favor, responde las siguientes preguntas:</p>
             <form id="evaluationForm">
-                <label for="evaluation">¿Te ha parecido útil este blog?</label><br>
-                <select id="evaluation" name="evaluation">
-                    <option value="1">1 - Muy poco útil</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 - Muy útil</option>
-                </select><br>
-                <input type="submit" value="Enviar">
+                <div class="question">
+                    <label>1. ¿Cuál es la primera fase del ciclo de desarrollo de software?</label><br>
+                    <input type="radio" name="question1" value="a"> Comunicación<br>
+                    <input type="radio" name="question1" value="b"> Pruebas<br>
+                    <input type="radio" name="question1" value="c"> Codificación<br>
+                </div>
+                <div class="question">
+                    <label>2. ¿Qué se analiza durante la fase de Viabilidad?</label><br>
+                    <input type="radio" name="question2" value="a"> El costo del software<br>
+                    <input type="radio" name="question2" value="b"> La rentabilidad y éxito potencial<br>
+                    <input type="radio" name="question2" value="c"> Las preferencias del cliente<br>
+                </div>
+                <div class="question">
+                    <label>3. ¿En qué fase se documentan los requisitos del software?</label><br>
+                    <input type="radio" name="question3" value="a"> Análisis<br>
+                    <input type="radio" name="question3" value="b"> Diseño<br>
+                    <input type="radio" name="question3" value="c"> Implementación<br>
+                </div>
+                <div class="question">
+                    <label>4. ¿Qué actividad se realiza durante la fase de Codificación?</label><br>
+                    <input type="radio" name="question4" value="a"> Creación de prototipos<br>
+                    <input type="radio" name="question4" value="b"> Programación del software<br>
+                    <input type="radio" name="question4" value="c"> Pruebas de sistema<br>
+                </div>
+                <div class="question">
+                    <label>5. ¿Qué ocurre en la fase de Implementación?</label><br>
+                    <input type="radio" name="question5" value="a"> Entrega del software al cliente<br>
+                    <input type="radio" name="question5" value="b"> Revisión del código<br>
+                    <input type="radio" name="question5" value="c"> Formación del equipo de desarrollo<br>
+                </div>
+                <div class="question">
+                    <label>6. ¿Cuál es el propósito del mantenimiento en el ciclo de desarrollo de software?</label><br>
+                    <input type="radio" name="question6" value="a"> Mejorar el rendimiento del software<br>
+                    <input type="radio" name="question6" value="b"> Arreglar errores y actualizar el software<br>
+                    <input type="radio" name="question6" value="c"> Crear nuevos módulos de software<br>
+                </div>
+                <div class="question">
+                    <label>7. ¿Cuál es la importancia de la fase de Pruebas?</label><br>
+                    <input type="radio" name="question7" value="a"> Garantizar que el software sea eficiente y funcione correctamente<br>
+                    <input type="radio" name="question7" value="b"> Recoger comentarios del cliente<br>
+                    <input type="radio" name="question7" value="c"> Desarrollar nuevas funcionalidades<br>
+                </div>
+                <input type="submit" value="Enviar Evaluación">
             </form>
+            <div id="evaluationResult" class="result"></div>
         </div>
 
         <div class="comments">
             <h2>Comentarios</h2>
-            <form id="commentForm">
-                <label for="comment">Deja tu comentario:</label><br>
-                <textarea id="comment" name="comment" rows="4" required></textarea><br>
-                <input type="submit" value="Enviar">
+            <p>¿Tienes alguna duda o comentario? Por favor, escríbenos:</p>
+            <form action="mailto:correo@ejemplo.com" method="post" enctype="text/plain">
+                <textarea rows="4" cols="50" placeholder="Escribe tu comentario aquí..."></textarea><br><br>
+                <input type="submit" value="Enviar Comentario">
             </form>
-        </div>
-
-        <div class="contact">
-            <h2>Contacto</h2>
-            <p>En caso de alguna duda, ponerse en contacto con <strong>correo@example.com</strong></p>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 Blog del Ciclo de Desarrollo de Software. Todos los derechos reservados.</p>
+        <p>© 2024 Blog del Ciclo de Desarrollo de Software. Todos los derechos reservados.</p>
     </footer>
 
     <script>
-        document.querySelectorAll('.toggle-button').forEach(button => {
+        const toggleButtons = document.querySelectorAll('.toggle-button');
+        toggleButtons.forEach(button => {
             button.addEventListener('click', () => {
                 const content = button.nextElementSibling;
-                content.style.display = content.style.display === 'none' || content.style.display === '' ? 'block' : 'none';
+                content.style.display = content.style.display === 'none' ? 'block' : 'none';
             });
         });
 
         document.getElementById('evaluationForm').addEventListener('submit', function(event) {
             event.preventDefault();
-            alert('Gracias por su evaluación: ' + document.getElementById('evaluation').value);
-        });
-
-        document.getElementById('commentForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            alert('Gracias por tu comentario: ' + document.getElementById('comment').value);
-            document.getElementById('comment').value = ''; // Limpiar el campo
+            const answers = {
+                question1: 'a',
+                question2: 'b',
+                question3: 'a',
+                question4: 'b',
+                question5: 'a',
+                question6: 'b',
+                question7: 'a'
+            };
+            let score = 0;
+            const formData = new FormData(this);
+            for (let [question, answer] of formData.entries()) {
+                if (answers[question] === answer) {
+                    score++;
+                }
+            }
+            document.getElementById('evaluationResult').innerText = `Tu puntaje: ${score} de 7`;
         });
     </script>
 </body>
