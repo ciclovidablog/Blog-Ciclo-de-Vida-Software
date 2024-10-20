@@ -1,8 +1,13 @@
-const accordions = document.getElementsByClassName("accordion");
-for (let i = 0; i < accordions.length; i++) {
-    accordions[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        const panel = this.nextElementSibling;
-        panel.style.display = panel.style.display === "block" ? "none" : "block";
-    });
-}
+document.getElementById('commentForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const comment = document.getElementById('comment').value;
+
+    // Aquí puedes enviar el comentario a un servidor o correo
+    alert('Comentario enviado: ' + comment);
+});
+
+document.getElementById('evaluationForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    // Procesar la evaluación y enviar los resultados
+    alert('Evaluación enviada. ¡Gracias por participar!');
+});
