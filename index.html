@@ -1,89 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Software Development Lifecycle Blog</title>
+    <meta name="description" content="Blog didáctico sobre el ciclo de vida del software.">
+    <title>Blog Didáctico - Ciclo de Vida del Software</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Barra de navegación -->
     <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo de la Empresa" class="logo">
+        </div>
         <nav>
             <ul>
-                <li><a href="#intro">Home</a></li>
-                <li><a href="#phases">Phases</a></li>
-                <li><a href="#case-studies">Case Studies</a></li>
-                <li><a href="#evaluation">Evaluation</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#introduccion">Introducción</a></li>
+                <li><a href="#fase1">Fase 1: Planificación</a></li>
+                <li><a href="#fase2">Fase 2: Análisis</a></li>
+                <li><a href="#fase3">Fase 3: Diseño</a></li>
+                <li><a href="#fase4">Fase 4: Implementación</a></li>
+                <li><a href="#fase5">Fase 5: Pruebas</a></li>
+                <li><a href="#fase6">Fase 6: Mantenimiento</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Sección de introducción -->
-    <section id="intro">
-        <h1>Welcome to the Software Development Lifecycle Blog</h1>
-        <p>Learn everything about the SDLC in an easy and engaging way.</p>
-    </section>
+    <main>
+        <section id="introduccion">
+            <h1>Introducción al Ciclo de Vida del Software</h1>
+            <p>El ciclo de vida del software es un proceso que describe las etapas por las que pasa un software desde su concepción hasta su retirada.</p>
+            <video controls>
+                <source src="intro_video.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5.
+            </video>
+            <img src="introduccion_image.jpg" alt="Ciclo de Vida del Software" class="responsive">
+        </section>
 
-    <!-- Fases del ciclo de vida del software -->
-    <section id="phases">
-        <h2>Phases of the Software Development Lifecycle</h2>
-        <div class="phase">
-            <h3>Planning</h3>
-            <p>Description of the planning phase.</p>
-            <video src="video/planning.mp4" controls></video>
-        </div>
-        <div class="phase">
-            <h3>Design</h3>
-            <p>Description of the design phase.</p>
-            <video src="video/design.mp4" controls></video>
-        </div>
-        <div class="phase">
-            <h3>Implementation</h3>
-            <p>Description of the implementation phase.</p>
-            <video src="video/implementation.mp4" controls></video>
-        </div>
-        <!-- Agrega más fases aquí -->
-    </section>
+        <section id="fase1">
+            <h2>Fase 1: Planificación</h2>
+            <p>La planificación es crucial para el éxito de un proyecto de software. Implica la definición de los objetivos y el alcance del proyecto.</p>
+            <video controls>
+                <source src="fase1_video.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5.
+            </video>
+            <img src="fase1_image.jpg" alt="Planificación" class="responsive">
+        </section>
 
-    <!-- Casos de estudio -->
-    <section id="case-studies">
-        <h2>Case Studies</h2>
-        <p>Explore examples of software projects and how they evolved through the SDLC.</p>
-        <div class="case">
-            <h3>Case Study 1</h3>
-            <p>Details of the first case study.</p>
-        </div>
-        <div class="case">
-            <h3>Case Study 2</h3>
-            <p>Details of the second case study.</p>
-        </div>
-        <!-- Agrega más casos de estudio aquí -->
-    </section>
+        <section id="fase2">
+            <h2>Fase 2: Análisis</h2>
+            <p>En esta fase se recopilan los requisitos del sistema y se analizan las necesidades del cliente.</p>
+            <video controls>
+                <source src="fase2_video.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5.
+            </video>
+            <img src="fase2_image.jpg" alt="Análisis" class="responsive">
+        </section>
 
-    <!-- Evaluación -->
-    <section id="evaluation">
-        <h2>Test Your Knowledge</h2>
-        <form action="mailto:your-email@example.com" method="post">
-            <label>What is the first phase of the SDLC?</label>
-            <input type="text" name="answer1" required>
-            <label>What happens during the design phase?</label>
-            <input type="text" name="answer2" required>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
+        <section id="fase3">
+            <h2>Fase 3: Diseño</h2>
+            <p>El diseño del software implica crear la arquitectura y los componentes del sistema.</p>
+            <video controls>
+                <source src="fase3_video.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5.
+            </video>
+            <img src="fase3_image.jpg" alt="Diseño" class="responsive">
+        </section>
 
-    <!-- Contacto -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>If you have any questions, feel free to reach out: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-    </section>
+        <section id="fase4">
+            <h2>Fase 4: Implementación</h2>
+            <p>En la fase de implementación se lleva a cabo la programación del software.</p>
+            <video controls>
+                <source src="fase4_video.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5.
+            </video>
+            <img src="fase4_image.jpg" alt="Implementación" class="responsive">
+        </section>
+
+        <section id="fase5">
+            <h2>Fase 5: Pruebas</h2>
+            <p>La fase de pruebas asegura que el software funcione correctamente y cumpla con los requisitos.</p>
+            <video controls>
+                <source src="fase5_video.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5.
+            </video>
+            <img src="fase5_image.jpg" alt="Pruebas" class="responsive">
+        </section>
+
+        <section id="fase6">
+            <h2>Fase 6: Mantenimiento</h2>
+            <p>El mantenimiento se ocupa de corregir errores y realizar mejoras en el software después de su lanzamiento.</p>
+            <video controls>
+                <source src="fase6_video.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5.
+            </video>
+            <img src="fase6_image.jpg" alt="Mantenimiento" class="responsive">
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form id="contact-form" action="mailto:tu_correo@example.com" method="post" enctype="text/plain">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+            <p>En caso de alguna duda, ponerse en contacto con <strong>tu_correo@example.com</strong>.</p>
+        </section>
+    </main>
 
     <footer>
-        <p>Blog del ciclo de vida del software © 2024. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Blog Didáctico - Ciclo de Vida del Software. Todos los derechos reservados.</p>
     </footer>
-
-    <script src="scripts.js"></script>
 </body>
 </html>
