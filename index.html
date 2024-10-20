@@ -3,133 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Blog de Ciclo de Vida del Software</title>
+    <title>Blog Ciclo de Vida del Software</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="logo">Ciclo de Vida del Software</div>
+    </header>
     <div class="container">
         <nav class="sidebar">
+            <h3>Secciones</h3>
             <ul>
                 <li><a href="#introduccion">Introducción</a></li>
-                <li><a href="#fase1">Fase 1: Análisis</a></li>
-                <li><a href="#fase2">Fase 2: Diseño</a></li>
-                <li><a href="#fase3">Fase 3: Desarrollo</a></li>
-                <li><a href="#fase4">Fase 4: Pruebas</a></li>
-                <li><a href="#fase5">Fase 5: Implementación</a></li>
-                <li><a href="#fase6">Fase 6: Mantenimiento</a></li>
-                <li><a href="#evaluacion">Evaluación</a></li>
+                <li><a href="#planificacion">Planificación</a></li>
+                <li><a href="#diseno">Diseño</a></li>
+                <li><a href="#desarrollo">Desarrollo</a></li>
+                <li><a href="#pruebas">Pruebas</a></li>
+                <li><a href="#implementacion">Implementación</a></li>
+                <li><a href="#mantenimiento">Mantenimiento</a></li>
                 <li><a href="#comentarios">Comentarios</a></li>
             </ul>
         </nav>
-        <main class="content">
-            <header>
-                <h1>Blog de Ciclo de Vida del Software</h1>
-                <p>Aprende sobre las fases del desarrollo de software de manera interactiva.</p>
-            </header>
-
+        <main>
             <section id="introduccion">
                 <h2>Introducción</h2>
-                <p>El ciclo de vida del software es un proceso que incluye varias fases, desde la concepción hasta el mantenimiento. Cada fase es crucial para asegurar la calidad y eficiencia del producto final.</p>
+                <p>Bienvenidos al blog sobre el ciclo de vida del software, donde exploraremos las diferentes fases del desarrollo.</p>
                 <video controls>
-                    <source src="https://www.example.com/video_intro.mp4" type="video/mp4">
-                    Tu navegador no soporta video.
+                    <source src="introduccion.mp4" type="video/mp4">
+                    Tu navegador no soporta el video.
                 </video>
             </section>
-
-            <section id="fase1">
-                <h2>Fase 1: Análisis</h2>
-                <p>En esta fase, se recopilan y analizan los requisitos del sistema. Es crucial entender lo que los usuarios necesitan.</p>
-                <p><strong>Ejemplo de caso:</strong> Una empresa necesita un sistema para gestionar sus inventarios.</p>
+            <section id="planificacion">
+                <h2>Planificación</h2>
+                <p>La planificación es crucial para establecer el alcance y los objetivos del proyecto. Aquí se definen los requisitos y se asignan recursos.</p>
+                <img src="planificacion.jpg" alt="Planificación del Software">
                 <video controls>
-                    <source src="https://www.example.com/video_analisis.mp4" type="video/mp4">
-                    Tu navegador no soporta video.
+                    <source src="planificacion.mp4" type="video/mp4">
+                    Tu navegador no soporta el video.
                 </video>
+                <h4>Ejemplo de Planificación:</h4>
+                <p>En un proyecto de desarrollo de una aplicación de gestión de tareas, la planificación incluye definir las características de la aplicación y establecer plazos.</p>
             </section>
-
-            <section id="fase2">
-                <h2>Fase 2: Diseño</h2>
-                <p>Durante esta fase, se elabora la arquitectura del software, incluyendo bases de datos y interfaz de usuario.</p>
-                <p><strong>Ejemplo de caso:</strong> El diseño de una interfaz amigable para el usuario del sistema de inventarios.</p>
+            <section id="diseno">
+                <h2>Diseño</h2>
+                <p>En esta fase, se crean prototipos y se define la arquitectura del software. Se decide cómo funcionará y se verá la aplicación.</p>
+                <img src="diseno.jpg" alt="Diseño del Software">
                 <video controls>
-                    <source src="https://www.example.com/video_diseno.mp4" type="video/mp4">
-                    Tu navegador no soporta video.
+                    <source src="diseno.mp4" type="video/mp4">
+                    Tu navegador no soporta el video.
                 </video>
+                <h4>Ejemplo de Diseño:</h4>
+                <p>Para la misma aplicación de gestión de tareas, se crean wireframes que muestran la interfaz de usuario y la navegación entre pantallas.</p>
             </section>
-
-            <section id="fase3">
-                <h2>Fase 3: Desarrollo</h2>
-                <p>En esta fase, se lleva a cabo la programación del software siguiendo el diseño establecido.</p>
-                <p><strong>Ejemplo de caso:</strong> Implementar el sistema de gestión de inventarios usando Python y MySQL.</p>
+            <section id="desarrollo">
+                <h2>Desarrollo</h2>
+                <p>Es la etapa donde se escribe el código. Los desarrolladores trabajan en colaboración para construir el software de acuerdo a las especificaciones.</p>
+                <img src="desarrollo.jpg" alt="Desarrollo del Software">
                 <video controls>
-                    <source src="https://www.example.com/video_desarrollo.mp4" type="video/mp4">
-                    Tu navegador no soporta video.
+                    <source src="desarrollo.mp4" type="video/mp4">
+                    Tu navegador no soporta el video.
                 </video>
+                <h4>Ejemplo de Desarrollo:</h4>
+                <p>Los desarrolladores utilizan lenguajes de programación como Java o Python para crear la funcionalidad de la aplicación.</p>
             </section>
-
-            <section id="fase4">
-                <h2>Fase 4: Pruebas</h2>
-                <p>Las pruebas aseguran que el software funcione correctamente y cumpla con los requisitos.</p>
-                <p><strong>Ejemplo de caso:</strong> Realizar pruebas unitarias en el sistema de inventarios.</p>
+            <section id="pruebas">
+                <h2>Pruebas</h2>
+                <p>Las pruebas son fundamentales para asegurar la calidad del software. Se realizan diferentes tipos de pruebas para detectar errores.</p>
+                <img src="pruebas.jpg" alt="Pruebas del Software">
                 <video controls>
-                    <source src="https://www.example.com/video_pruebas.mp4" type="video/mp4">
-                    Tu navegador no soporta video.
+                    <source src="pruebas.mp4" type="video/mp4">
+                    Tu navegador no soporta el video.
                 </video>
+                <h4>Ejemplo de Pruebas:</h4>
+                <p>Se realizan pruebas unitarias para verificar que cada componente del software funcione correctamente antes de la integración.</p>
             </section>
-
-            <section id="fase5">
-                <h2>Fase 5: Implementación</h2>
-                <p>En esta fase, el software se instala en el entorno del usuario final.</p>
-                <p><strong>Ejemplo de caso:</strong> Desplegar el sistema de gestión de inventarios en la empresa.</p>
+            <section id="implementacion">
+                <h2>Implementación</h2>
+                <p>En esta fase, el software se lanza al entorno de producción y se pone a disposición de los usuarios finales.</p>
+                <img src="implementacion.jpg" alt="Implementación del Software">
                 <video controls>
-                    <source src="https://www.example.com/video_implementacion.mp4" type="video/mp4">
-                    Tu navegador no soporta video.
+                    <source src="implementacion.mp4" type="video/mp4">
+                    Tu navegador no soporta el video.
                 </video>
+                <h4>Ejemplo de Implementación:</h4>
+                <p>Después de completar todas las pruebas, la aplicación de gestión de tareas se lanza en la tienda de aplicaciones.</p>
             </section>
-
-            <section id="fase6">
-                <h2>Fase 6: Mantenimiento</h2>
-                <p>El mantenimiento incluye correcciones de errores y actualizaciones para mejorar el software.</p>
-                <p><strong>Ejemplo de caso:</strong> Actualizar el sistema para agregar nuevas funciones según la necesidad del usuario.</p>
+            <section id="mantenimiento">
+                <h2>Mantenimiento</h2>
+                <p>El mantenimiento es esencial para corregir errores y actualizar el software. Se debe asegurar su buen funcionamiento a lo largo del tiempo.</p>
+                <img src="mantenimiento.jpg" alt="Mantenimiento del Software">
                 <video controls>
-                    <source src="https://www.example.com/video_mantenimiento.mp4" type="video/mp4">
-                    Tu navegador no soporta video.
+                    <source src="mantenimiento.mp4" type="video/mp4">
+                    Tu navegador no soporta el video.
                 </video>
+                <h4>Ejemplo de Mantenimiento:</h4>
+                <p>Se lanzan actualizaciones periódicas para corregir errores y agregar nuevas funcionalidades a la aplicación.</p>
             </section>
-
-            <section id="evaluacion">
-                <h2>Evaluación</h2>
-                <p>La evaluación del aprendizaje incluye preguntas que permiten identificar lo que se ha comprendido.</p>
-                <form>
-                    <label>Pregunta 1: ¿Qué se realiza en la fase de análisis?</label>
-                    <select>
-                        <option value="1">Recolección de requisitos</option>
-                        <option value="2">Programación</option>
-                        <option value="3">Pruebas</option>
-                    </select>
-                    <br>
-                    <label>Pregunta 2: ¿Cuál es la fase donde se hace el mantenimiento del software?</label>
-                    <select>
-                        <option value="1">Desarrollo</option>
-                        <option value="2">Implementación</option>
-                        <option value="3">Mantenimiento</option>
-                    </select>
-                    <br>
-                    <button type="submit">Enviar</button>
-                </form>
-            </section>
-
             <section id="comentarios">
                 <h2>Comentarios</h2>
-                <form action="mailto:tu_correo@example.com" method="post" enctype="text/plain">
-                    <label for="comentario">Escribe tu comentario:</label>
-                    <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea>
-                    <br>
-                    <p>En caso de alguna duda, ponerse en contacto con tu_correo@example.com</p>
-                    <button type="submit">Enviar</button>
+                <form action="mailto:tu_correo@ejemplo.com" method="post" enctype="text/plain">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                    <input type="submit" value="Enviar">
                 </form>
+                <p>En caso de alguna duda, ponerse en contacto con <a href="mailto:tu_correo@ejemplo.com">tu_correo@ejemplo.com</a>.</p>
             </section>
         </main>
     </div>
+    <footer>
+        <p>Derechos de autor &copy; 2024 Ciclo de Vida del Software. Todos los derechos reservados.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
