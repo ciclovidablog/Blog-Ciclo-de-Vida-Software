@@ -1,17 +1,20 @@
 body {
   font-family: Arial, sans-serif;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
-  color: #333;
-  background-color: #f0f0f0;
-  display: flex;
+  background-color: #f4f4f4;
 }
 
 header {
-  background: linear-gradient(to right, #0066cc, #0099ff);
+  background-color: #007BFF;
   color: white;
-  padding: 20px;
+  padding: 20px 0;
   text-align: center;
+}
+
+.logo img {
+  max-width: 150px;
 }
 
 .navbar ul {
@@ -19,38 +22,66 @@ header {
   padding: 0;
 }
 
-.navbar li {
+.navbar ul li {
   display: inline;
-  margin-right: 15px;
+  margin: 0 15px;
 }
 
-aside {
-  width: 200px;
-  background-color: #e0e0e0;
-  padding: 20px;
-  height: 100vh;
-  position: fixed;
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
 }
 
 main {
-  margin-left: 220px;
   padding: 20px;
-  flex: 1;
 }
 
 section {
-  margin-bottom: 40px;
-  padding: 20px;
   background: white;
+  margin: 20px 0;
+  padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #007BFF;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  margin: 5px 0 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
 
 footer {
-  background-color: #0066cc;
-  color: white;
   text-align: center;
-  padding: 10px 0;
+  padding: 20px 0;
+  background-color: #007BFF;
+  color: white;
   position: relative;
   bottom: 0;
   width: 100%;
