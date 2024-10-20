@@ -1,12 +1,32 @@
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
+// Función para suavizar el desplazamiento al hacer clic en los enlaces del menú
+document.querySelectorAll('.sidebar a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
-    if (!name || !email || !message) {
-        alert('Por favor, completa todos los campos.');
-        event.preventDefault(); // Evita que se envíe el formulario si hay campos vacíos
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
+
+// Validación del formulario de comentarios
+const commentForm = document.querySelector('form[action="mailto:tu_correo@example.com"]');
+commentForm.addEventListener('submit', function (e) {
+    const comentarioInput = document.getElementById('comentario');
+
+    if (comentarioInput.value.trim() === '') {
+        e.preventDefault(); // Evitar el envío del formulario
+        alert('Por favor, ingresa un comentario antes de enviar.');
     } else {
-        alert('Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.');
+        alert('Comentario enviado con éxito. ¡Gracias!');
     }
+});
+
+// Validación del formulario de evaluación
+const evaluationForm = document.querySelector('form[action=""]'); // Asegúrate de que la acción sea la correcta
+evaluationForm.addEventListener('submit', function (e) {
+    alert('Resultados enviados. ¡Gracias por participar!');
 });
