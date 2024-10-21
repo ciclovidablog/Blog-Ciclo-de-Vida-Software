@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog del Ciclo de Desarrollo de Software</title>
+    <!-- Conexión al archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+    <div class="container">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -184,51 +189,62 @@
             </div>
         </div>
         <body>
-            <form id="quiz">
-            <h3>1. ¿Cuál es el primer paso del ciclo de vida del software?</h3>
-            <label><input type="radio" name="q1" value="correct"> Análisis de requisitos</label><br>
-            <label><input type="radio" name="q1" value="incorrect"> Diseño</label><br>
-            <label><input type="radio" name="q1" value="incorrect"> Implementación</label><br>
-        
-            <h3>2. ¿Qué se realiza en la fase de implementación?</h3>
-            <label><input type="radio" name="q2" value="incorrect"> Planificación</label><br>
-            <label><input type="radio" name="q2" value="correct"> Codificación</label><br>
-            <label><input type="radio" name="q2" value="incorrect"> Pruebas</label><br>
-        
-            <h3>3. ¿Cuál es la última fase del ciclo de vida del software?</h3>
-            <label><input type="radio" name="q3" value="correct"> Mantenimiento</label><br>
-            <label><input type="radio" name="q3" value="incorrect"> Codificación</label><br>
-            <label><input type="radio" name="q3" value="incorrect"> Diseño</label><br>
-        
-            <h3>4. ¿Qué se realiza durante la fase de análisis de requisitos?</h3>
-            <label><input type="radio" name="q4" value="incorrect"> Diseñar la interfaz de usuario</label><br>
-            <label><input type="radio" name="q4" value="correct"> Identificar y documentar los requisitos del software</label><br>
-            <label><input type="radio" name="q4" value="incorrect"> Implementar el código</label><br>
-        
-            <h3>5. ¿Cuál es el propósito principal de la fase de diseño en el ciclo de vida del software?</h3>
-            <label><input type="radio" name="q5" value="correct"> Especificar la arquitectura y los componentes del sistema</label><br>
-            <label><input type="radio" name="q5" value="incorrect"> Realizar las pruebas del software</label><br>
-            <label><input type="radio" name="q5" value="incorrect"> Identificar los errores</label><br>
-        
-            <h3>6. ¿Qué tipo de pruebas se realizan para verificar que el software cumple con los requisitos establecidos?</h3>
-            <label><input type="radio" name="q6" value="incorrect"> Pruebas unitarias</label><br>
-            <label><input type="radio" name="q6" value="correct"> Pruebas de aceptación</label><br>
-            <label><input type="radio" name="q6" value="incorrect"> Pruebas de integración</label><br>
-        
-            <h3>7. ¿Cuál de las siguientes tareas pertenece a la fase de implementación?</h3>
-            <label><input type="radio" name="q7" value="incorrect"> Definir los requisitos del sistema</label><br>
-            <label><input type="radio" name="q7" value="correct"> Escribir el código fuente del software</label><br>
-            <label><input type="radio" name="q7" value="incorrect"> Validar las funcionalidades del software</label><br>
-        
-            <h3>8. ¿Cuál es el objetivo de la fase de mantenimiento en el ciclo de vida del software?</h3>
-            <label><input type="radio" name="q8" value="correct"> Mejorar el rendimiento y corregir errores después de la implementación</label><br>
-            <label><input type="radio" name="q8" value="incorrect"> Rediseñar la arquitectura del software</label><br>
-            <label><input type="radio" name="q8" value="incorrect"> Crear la documentación técnica</label><br>
-        
-            <input type="button" value="Evaluar" onclick="evaluateQuiz()">
-        </form>
-        
-        <p id="result"></p>    
+            <div class="evaluation">
+                <h2>Evaluación</h2>
+                <form id="quiz">
+                  <!-- Pregunta 1 -->
+                  <h3>1. ¿Cuál es el primer paso del ciclo de vida del software?</h3>
+                  <label><input type="radio" name="q1" value="correct"> Análisis de requisitos</label><br>
+                  <label><input type="radio" name="q1" value="incorrect"> Diseño</label><br>
+                  <label><input type="radio" name="q1" value="incorrect"> Implementación</label><br>
+                  <span id="result-q1" class="result"></span> <!-- Retroalimentación para pregunta 1 -->
+                
+                  <!-- Pregunta 2 -->
+                  <h3>2. ¿Qué se realiza en la fase de implementación?</h3>
+                  <label><input type="radio" name="q2" value="incorrect"> Planificación</label><br>
+                  <label><input type="radio" name="q2" value="correct"> Codificación</label><br>
+                  <label><input type="radio" name="q2" value="incorrect"> Pruebas</label><br>
+                  <span id="result-q2" class="result"></span> <!-- Retroalimentación para pregunta 2 -->
+                
+                  <!-- Pregunta 3 -->
+                  <h3>3. ¿Qué ocurre en la fase de pruebas?</h3>
+                  <label><input type="radio" name="q3" value="incorrect"> Recolección de requisitos</label><br>
+                  <label><input type="radio" name="q3" value="correct"> Se verifica que el software funcione correctamente</label><br>
+                  <label><input type="radio" name="q3" value="incorrect"> Planificación del proyecto</label><br>
+                  <span id="result-q3" class="result"></span> <!-- Retroalimentación para pregunta 3 -->
+                
+                  <!-- Pregunta 4 -->
+                  <h3>4. ¿En qué fase se realizan los cambios de acuerdo con los errores encontrados?</h3>
+                  <label><input type="radio" name="q4" value="correct"> Mantenimiento</label><br>
+                  <label><input type="radio" name="q4" value="incorrect"> Diseño</label><br>
+                  <label><input type="radio" name="q4" value="incorrect"> Implementación</label><br>
+                  <span id="result-q4" class="result"></span> <!-- Retroalimentación para pregunta 4 -->
+                
+                  <!-- Pregunta 5 -->
+                  <h3>5. ¿Cuál es el objetivo principal del diseño de software?</h3>
+                  <label><input type="radio" name="q5" value="correct"> Crear una solución que cumpla con los requisitos</label><br>
+                  <label><input type="radio" name="q5" value="incorrect"> Desarrollar pruebas para el software</label><br>
+                  <label><input type="radio" name="q5" value="incorrect"> Implementar el código</label><br>
+                  <span id="result-q5" class="result"></span> <!-- Retroalimentación para pregunta 5 -->
+                
+                  <!-- Pregunta 6 -->
+                  <h3>6. ¿Cuál es la última fase del ciclo de vida del software?</h3>
+                  <label><input type="radio" name="q6" value="incorrect"> Implementación</label><br>
+                  <label><input type="radio" name="q6" value="incorrect"> Pruebas</label><br>
+                  <label><input type="radio" name="q6" value="correct"> Mantenimiento</label><br>
+                  <span id="result-q6" class="result"></span> <!-- Retroalimentación para pregunta 6 -->
+
+                  <div id="final-score" class="result"></div>
+
+                  <button type="submit">Enviar</button>
+                </form>
+         <div class="result" id="result"></div>
+    </div> 
+    <div class="feedback" id="feedback" style="display:none;">
+        <h3>¡Buen trabajo!</h3>
+        <p>Has completado la evaluación. Recuerda que cada paso en el ciclo de desarrollo es importante para crear software de calidad. ¡Sigue aprendiendo y mejorando!</p>
+    </div>
+
         </body>
         
         <!-- Sección de comentarios -->
@@ -261,6 +277,71 @@
             });
         });
     </script>
+
+
+
+<script defer src="evaluacion.js"></script>
+
+<script>
+    document.getElementById('quiz').addEventListener('submit', function(e) {
+      e.preventDefault(); // Evitar el comportamiento por defecto del formulario
+  
+      let score = 0;
+      const totalQuestions = 6; // Ajustar según el número de preguntas
+  
+      // Pregunta 1
+      if (document.querySelector('input[name="q1"]:checked').value === "correct") {
+          score++;
+          document.getElementById('result-q1').textContent = "¡Correcto! El primer paso es el análisis de requisitos.";
+      } else {
+          document.getElementById('result-q1').textContent = "Incorrecto. El primer paso es el análisis de requisitos.";
+      }
+  
+      // Pregunta 2
+      if (document.querySelector('input[name="q2"]:checked').value === "correct") {
+          score++;
+          document.getElementById('result-q2').textContent = "¡Bien hecho! La codificación ocurre en la fase de implementación.";
+      } else {
+          document.getElementById('result-q2').textContent = "Incorrecto. La fase de implementación implica la codificación.";
+      }
+  
+      // Pregunta 3
+      if (document.querySelector('input[name="q3"]:checked').value === "correct") {
+          score++;
+          document.getElementById('result-q3').textContent = "¡Excelente! En la fase de pruebas se verifica que el software funcione correctamente.";
+      } else {
+          document.getElementById('result-q3').textContent = "Incorrecto. En esta fase se verifica el correcto funcionamiento del software.";
+      }
+  
+      // Pregunta 4
+      if (document.querySelector('input[name="q4"]:checked').value === "correct") {
+          score++;
+          document.getElementById('result-q4').textContent = "¡Correcto! El mantenimiento se realiza para corregir errores después de la implementación.";
+      } else {
+          document.getElementById('result-q4').textContent = "Incorrecto. Es en la fase de mantenimiento donde se realizan los cambios.";
+      }
+  
+      // Pregunta 5
+      if (document.querySelector('input[name="q5"]:checked').value === "correct") {
+          score++;
+          document.getElementById('result-q5').textContent = "¡Bien hecho! El objetivo del diseño es cumplir con los requisitos.";
+      } else {
+          document.getElementById('result-q5').textContent = "Incorrecto. El diseño se centra en crear una solución que cumpla con los requisitos.";
+      }
+  
+      // Pregunta 6
+      if (document.querySelector('input[name="q6"]:checked').value === "correct") {
+          score++;
+          document.getElementById('result-q6').textContent = "¡Correcto! El mantenimiento es la última fase del ciclo de vida del software.";
+      } else {
+          document.getElementById('result-q6').textContent = "Incorrecto. La última fase es el mantenimiento.";
+      }
+  
+      // Mostrar el resultado final
+      document.getElementById('final-score').textContent = `Obtuviste ${score} de ${totalQuestions} correctas.`;
+    });
+  </script>
+
 </body>
 </html>
 
